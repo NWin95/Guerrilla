@@ -37,11 +37,13 @@ public class Grapnel : MonoBehaviour {
 
     void GrapnelThrow ()
     {
+        //Debug.Log(throwDirection.normalized);
+
         Vector3 pos = transform.position + (transform.forward * 1.25f);
         GameObject grapnelObj = Instantiate(grapnelPref, pos, Quaternion.identity) as GameObject;
         grapnelTrans = grapnelObj.GetComponent<Transform>();
 
-        grapnelTrans.GetComponent<Rigidbody>().velocity = throwDirection * throwSpeed;
+        grapnelTrans.GetComponent<Rigidbody>().velocity = throwDirection.normalized * throwSpeed;
 
         thrownBool = true;
     }
@@ -70,10 +72,11 @@ public class Grapnel : MonoBehaviour {
         sj.autoConfigureConnectedAnchor = false;
         sj.spring = Mathf.Infinity;
         sj.damper = Mathf.Infinity;
+        sj.enableCollision = true;
 
         Vector3 pos = transform.position + (transform.forward * 1.25f);
         float dis = Vector3.Distance(pos, hit.point);
-        sj.maxDistance = dis + 0.25f;
+        sj.maxDistance = dis + 1;
 
         Rigidbody rig = hit.transform.GetComponent<Rigidbody>();
         if (rig)
