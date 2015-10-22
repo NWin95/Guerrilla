@@ -8,8 +8,9 @@ public class Grapnel : MonoBehaviour {
     bool thrownBool;
     bool swinging;
     public LayerMask grapnelMask;
-    public Vector3 throwDirection;
+    public Vector3 throwAddition;
     public float throwSpeed;
+    public Transform CamParent;
 
     void Start ()
     {
@@ -18,11 +19,11 @@ public class Grapnel : MonoBehaviour {
 
     void Update ()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Grapnel"))
             GrapnelThrow();
-        if (Input.GetButtonUp("Fire1") && thrownBool)
+        if (Input.GetButtonUp("Grapnel") && thrownBool)
             GrapnelDestroy();
-        if (Input.GetButtonUp("Fire1") && swinging)
+        if (Input.GetButtonUp("Grapnel") && swinging)
             GrapnelDetach();
 
         if (thrownBool)
@@ -43,6 +44,7 @@ public class Grapnel : MonoBehaviour {
         GameObject grapnelObj = Instantiate(grapnelPref, pos, Quaternion.identity) as GameObject;
         grapnelTrans = grapnelObj.GetComponent<Transform>();
 
+        Vector3 throwDirection = CamParent.forward + throwAddition;
         grapnelTrans.GetComponent<Rigidbody>().velocity = throwDirection.normalized * throwSpeed;
 
         thrownBool = true;
@@ -72,6 +74,7 @@ public class Grapnel : MonoBehaviour {
         sj.autoConfigureConnectedAnchor = false;
         sj.spring = Mathf.Infinity;
         sj.damper = Mathf.Infinity;
+        sj.breakForce = 9999999 * GetComponent<Rigidbody>().mass;
         sj.enableCollision = true;
 
         Vector3 pos = transform.position + (transform.forward * 1.25f);
