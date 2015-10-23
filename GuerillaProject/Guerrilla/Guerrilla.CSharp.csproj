@@ -70,7 +70,9 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\CameraRotation.cs" />
     <Compile Include="Assets\Scripts\Grapnel.cs" />
-    <Compile Include="Assets\Scripts\Player_Movement.cs" />
+    <Compile Include="Assets\Scripts\Player_ModeController.cs" />
+    <Compile Include="Assets\Scripts\Player_MovementBird.cs" />
+    <Compile Include="Assets\Scripts\Player_MovementHuman.cs" />
     <Compile Include="Assets\Scripts\SpeedTest.cs" />
     <Compile Include="Assets\Scripts\Translate.cs" />
   </ItemGroup>

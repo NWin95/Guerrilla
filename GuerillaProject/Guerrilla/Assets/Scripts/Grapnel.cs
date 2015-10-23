@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Grapnel : MonoBehaviour {
 
+    public Transform playerVis;
     public GameObject grapnelPref;
     public Transform grapnelTrans;
     bool thrownBool;
@@ -11,10 +12,12 @@ public class Grapnel : MonoBehaviour {
     public Vector3 throwAddition;
     public float throwSpeed;
     public Transform CamParent;
+    Rigidbody rig;
+    public float turnTime;
 
     void Start ()
     {
-
+        rig = GetComponent<Rigidbody>();
     }
 
     void Update ()
@@ -28,26 +31,54 @@ public class Grapnel : MonoBehaviour {
 
         if (thrownBool)
             GrapnelCast();
+        //if (swinging)
+        //    LookAtVel();
+        
+    }
+
+    void LookAtVel ()
+    {
+        Vector3 lookVec = rig.velocity;
+        lookVec = lookVec.normalized;
+
+        Quaternion lookRot = Quaternion.LookRotation(lookVec);
+        Quaternion slerp = Quaternion.Slerp(playerVis.rotation, lookRot, Time.deltaTime / turnTime);
+        playerVis.rotation = slerp;
+    }
+
+    public void GroundHit ()
+    {
+        if (swinging || thrownBool)
+        {
+            swinging = false;
+            thrownBool = false;
+            GrapnelDetach();
+            GrapnelDestroy();
+        }
     }
 
     void GrapnelDestroy ()
     {
         thrownBool = false;
-        Destroy(grapnelTrans.gameObject);
+        if (grapnelTrans != null)
+            Destroy(grapnelTrans.gameObject);
     }
 
     void GrapnelThrow ()
     {
         //Debug.Log(throwDirection.normalized);
 
-        Vector3 pos = transform.position + (transform.forward * 1.25f);
-        GameObject grapnelObj = Instantiate(grapnelPref, pos, Quaternion.identity) as GameObject;
-        grapnelTrans = grapnelObj.GetComponent<Transform>();
+        if (!GetComponent<Player_MovementHuman>().grounded)
+        {
+            Vector3 pos = transform.position + (transform.forward * 1.25f);
+            GameObject grapnelObj = Instantiate(grapnelPref, pos, Quaternion.identity) as GameObject;
+            grapnelTrans = grapnelObj.GetComponent<Transform>();
 
-        Vector3 throwDirection = CamParent.forward + throwAddition;
-        grapnelTrans.GetComponent<Rigidbody>().velocity = throwDirection.normalized * throwSpeed;
+            Vector3 throwDirection = CamParent.forward + throwAddition;
+            grapnelTrans.GetComponent<Rigidbody>().velocity = (throwDirection.normalized * throwSpeed) + rig.velocity;
 
-        thrownBool = true;
+            thrownBool = true;
+        }
     }
 
     void GrapnelCast ()
@@ -63,7 +94,8 @@ public class Grapnel : MonoBehaviour {
 
     void GrapnelDetach()
     {
-        Destroy(gameObject.GetComponent<SpringJoint>());
+        if (GetComponent<SpringJoint>())
+            Destroy(gameObject.GetComponent<SpringJoint>());
     }
 
     void GrapnelAttach(RaycastHit hit)

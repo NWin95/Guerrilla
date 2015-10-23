@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Player_Movement : MonoBehaviour {
+public class Player_MovementHuman : MonoBehaviour {
 
     Rigidbody rig;
     public float maxSpeed;
@@ -14,11 +14,10 @@ public class Player_Movement : MonoBehaviour {
     public Transform camParent;
     bool gRayCheck;
     bool gContactCheck;
+    bool groundedHold;
     int contacts;
 
     float inputMag;
-
-    float test;
 
 	void Start () {
         rig = GetComponent<Rigidbody>();
@@ -45,7 +44,6 @@ public class Player_Movement : MonoBehaviour {
             lookVec.y = 0;
             lookVec = lookVec.normalized;
 
-            Vector3 lookPos = transform.position + lookVec;
             Quaternion lookRot = Quaternion.LookRotation(lookVec);
             Quaternion slerp = Quaternion.Slerp(transform.rotation, lookRot, Time.deltaTime / turnTime);
             transform.rotation = slerp;
@@ -70,14 +68,27 @@ public class Player_Movement : MonoBehaviour {
         else
             grounded = false;
 
+        if (grounded && !groundedHold)                  //Hit the ground
+            GetComponent<Grapnel>().GroundHit();
+        if (!grounded && groundedHold)                  //Leave the ground
+            LeaveGround();
+
+        groundedHold = grounded;
         //Debug.Log(gContactCheck);
+    }
+
+    void LeaveGround ()
+    {
+        Vector3 vel = rig.velocity;
+        vel += inputVel;
+        rig.velocity = vel;
     }
 
     void Jump ()
     {
         Vector3 vel = rig.velocity;
 
-        vel += inputVel;
+        //vel += inputVel;
 
         float jumpVel = Mathf.Sqrt(2 * Mathf.Abs(Physics.gravity.magnitude) * jumpHeight) + 0.25f;
         vel.y = jumpVel;
@@ -103,7 +114,13 @@ public class Player_Movement : MonoBehaviour {
 
     void OnCollisionStay (Collision collision)
     {
-        contacts = collision.contacts.Length;
+        foreach (ContactPoint cPoint in collision.contacts)
+        {
+            if (Vector3.Angle(Vector3.up, cPoint.normal) < 75)
+            {
+                contacts++;
+            }
+        }
     }
 
     void OnCollisionExit ()
