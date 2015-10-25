@@ -14,9 +14,22 @@ public class CameraRotation : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        CamMove();
+        //CamMove();
         CamRot();
 	}
+
+    void LateUpdate ()
+    {
+        CamMove();
+        //CamRot();
+    }
+
+    /*
+    void FixedUpdate ()
+    {
+        //CamMove();
+        //CamRot();
+    }   */
 
     void CamMove ()
     {

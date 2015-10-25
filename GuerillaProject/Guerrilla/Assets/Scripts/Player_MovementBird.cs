@@ -16,12 +16,13 @@ public class Player_MovementBird : MonoBehaviour {
 	
 	
 	void Update () {
-        LookDirection();
+        //LookDirection();
 	}
 
     void FixedUpdate()
     {
         MovementFixed();
+        LookDirection();
     }
 
     void LookDirection()
@@ -30,6 +31,7 @@ public class Player_MovementBird : MonoBehaviour {
         lookVec = lookVec.normalized;
 
         Quaternion lookRot = Quaternion.LookRotation(lookVec);
+        //Quaternion slerp = Quaternion.Slerp(transform.rotation, lookRot, Time.fixedDeltaTime / turnTime);
         Quaternion slerp = Quaternion.Slerp(transform.rotation, lookRot, Time.deltaTime / turnTime);
         transform.rotation = slerp;
     }
