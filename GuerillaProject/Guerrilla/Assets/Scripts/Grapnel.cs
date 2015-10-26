@@ -1,4 +1,8 @@
-﻿using UnityEngine;
+﻿//
+//  Get this to work well when grounded
+//
+
+using UnityEngine;
 using System.Collections;
 
 public class Grapnel : MonoBehaviour {
@@ -50,14 +54,14 @@ public class Grapnel : MonoBehaviour {
     {
         if (swinging || thrownBool)
         {
-            swinging = false;
-            thrownBool = false;
+            //swinging = false;
+            //thrownBool = false;
             GrapnelDetach();
             GrapnelDestroy();
         }
     }
 
-    void GrapnelDestroy ()
+    public void GrapnelDestroy ()
     {
         thrownBool = false;
         if (grapnelTrans != null)
@@ -92,8 +96,9 @@ public class Grapnel : MonoBehaviour {
         }
     }
 
-    void GrapnelDetach()
+    public void GrapnelDetach()
     {
+        swinging = false;
         if (GetComponent<SpringJoint>())
             Destroy(gameObject.GetComponent<SpringJoint>());
     }

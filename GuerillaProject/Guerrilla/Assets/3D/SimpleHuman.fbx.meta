@@ -26,6 +26,23 @@ ModelImporter:
     100036: Human
     100038: HumanMesh
     100040: //RootNode
+    100042: Chest
+    100044: Foot_l
+    100046: Foot_r
+    100048: Hand_l
+    100050: Hand_r
+    100052: Head
+    100054: LowerArm_l
+    100056: LowerArm_r
+    100058: LowerLeg_l
+    100060: LowerLeg_r
+    100062: Neck
+    100064: Pelvis
+    100066: Stomach
+    100068: UpperArm_l
+    100070: UpperArm_r
+    100072: UpperLeg_l
+    100074: UpperLeg_r
     400000: Bone
     400002: Bone_001
     400004: Bone_002
@@ -47,6 +64,23 @@ ModelImporter:
     400036: Human
     400038: HumanMesh
     400040: //RootNode
+    400042: Chest
+    400044: Foot_l
+    400046: Foot_r
+    400048: Hand_l
+    400050: Hand_r
+    400052: Head
+    400054: LowerArm_l
+    400056: LowerArm_r
+    400058: LowerLeg_l
+    400060: LowerLeg_r
+    400062: Neck
+    400064: Pelvis
+    400066: Stomach
+    400068: UpperArm_l
+    400070: UpperArm_r
+    400072: UpperLeg_l
+    400074: UpperLeg_r
     4300000: Hood
     4300002: HumanMesh
     7400000: Default Take

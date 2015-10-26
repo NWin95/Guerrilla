@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Player_ModeController : MonoBehaviour {
 
+    public CameraRotation camScript;
     Rigidbody rig;
     public bool human;
 
@@ -34,6 +35,7 @@ public class Player_ModeController : MonoBehaviour {
     void SetHuman ()
     {
         human = true;
+        camScript.human = true;
 
         humanVis.SetActive(true);
         birdVis.SetActive(false);
@@ -50,14 +52,18 @@ public class Player_ModeController : MonoBehaviour {
     void SetBird ()
     {
         human = false;
+        camScript.human = false;
 
         humanVis.SetActive(false);
         birdVis.SetActive(true);
 
         GetComponent<Player_MovementBird>().enabled = true;
-
         GetComponent<Player_MovementHuman>().enabled = false;
-        GetComponent<Grapnel>().enabled = false;
+
+        Grapnel grapnelScript = GetComponent<Grapnel>();
+        grapnelScript.GrapnelDetach();
+        grapnelScript.GrapnelDestroy();
+        grapnelScript.enabled = false;
 
         rig.useGravity = false;
         rig.mass = 50;

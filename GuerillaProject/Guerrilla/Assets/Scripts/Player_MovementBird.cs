@@ -27,12 +27,15 @@ public class Player_MovementBird : MonoBehaviour {
 
     void LookDirection()
     {
-        Vector3 lookVec = camParent.forward;
-        lookVec = lookVec.normalized;
+        //Vector3 lookVec = camParent.forward;
+        //lookVec = lookVec.normalized;
 
-        Quaternion lookRot = Quaternion.LookRotation(lookVec);
-        //Quaternion slerp = Quaternion.Slerp(transform.rotation, lookRot, Time.fixedDeltaTime / turnTime);
-        Quaternion slerp = Quaternion.Slerp(transform.rotation, lookRot, Time.deltaTime / turnTime);
+        //Quaternion lookRot = Quaternion.LookRotation(lookVec);
+        //Quaternion slerp = Quaternion.Slerp(transform.rotation, lookRot, Time.fixedDeltaTime / turnTime);     //Probably
+        //Quaternion slerp = Quaternion.Slerp(transform.rotation, lookRot, Time.deltaTime / turnTime);
+        Quaternion targRot = camParent.rotation;
+        Quaternion slerp = Quaternion.Slerp(transform.rotation, targRot, Time.fixedDeltaTime / turnTime);
+
         transform.rotation = slerp;
     }
 
