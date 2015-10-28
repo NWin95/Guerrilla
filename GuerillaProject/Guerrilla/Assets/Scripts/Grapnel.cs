@@ -15,13 +15,24 @@ public class Grapnel : MonoBehaviour {
     public LayerMask grapnelMask;
     public Vector3 throwAddition;
     public float throwSpeed;
-    public Transform CamParent;
+    public Transform camParent;
     Rigidbody rig;
     public float turnTime;
 
+    Vector3 rigVelCus;
+    Vector3 posA;
+    Vector3 posB;
+
+    Player_MovementHuman moveScript;
+
     void Start ()
     {
+        moveScript = GetComponent<Player_MovementHuman>();
         rig = GetComponent<Rigidbody>();
+        posB = rig.position;
+
+        //Debug.Log(rig.position);
+        //Debug.Log(transform.position);
     }
 
     void Update ()
@@ -40,9 +51,33 @@ public class Grapnel : MonoBehaviour {
         
     }
 
+    /*
+    void FixedUpdate ()
+    {
+        RigVelCusFunc();
+        LookAtVel();
+    }   */
+    /*
+    void RigVelCusFunc ()
+    {
+        posA = rig.position;
+        Vector3 dif = posA - posB;
+        Vector3 camVec = CamParent.forward;
+        camVec.y = 0;
+        dif += camVec * 0.01f;
+        rigVelCus = dif / Time.fixedDeltaTime;
+        posB = rig.position;
+    }   */
+
     void LookAtVel ()
     {
-        Vector3 lookVec = rig.velocity;
+        //Vector3 lookVec = rig.velocity;
+        bool mGrounded = moveScript.grounded;
+
+        Vector3 lookVec = rigVelCus;
+        if (mGrounded)
+            lookVec -= rig.velocity;
+        
         lookVec = lookVec.normalized;
 
         Quaternion lookRot = Quaternion.LookRotation(lookVec);
@@ -50,7 +85,7 @@ public class Grapnel : MonoBehaviour {
         playerVis.rotation = slerp;
     }
 
-    public void GroundHit ()
+    public void GroundHit ()    //  Handle what happens when the ground is touched
     {
         if (swinging || thrownBool)
         {
@@ -61,14 +96,14 @@ public class Grapnel : MonoBehaviour {
         }
     }
 
-    public void GrapnelDestroy ()
+    public void GrapnelDestroy ()   //  Destroy grapnel when it's unconnected / not swinging
     {
         thrownBool = false;
         if (grapnelTrans != null)
             Destroy(grapnelTrans.gameObject);
     }
 
-    void GrapnelThrow ()
+    void GrapnelThrow ()    //  Thow grapnel
     {
         //Debug.Log(throwDirection.normalized);
 
@@ -78,14 +113,14 @@ public class Grapnel : MonoBehaviour {
             GameObject grapnelObj = Instantiate(grapnelPref, pos, Quaternion.identity) as GameObject;
             grapnelTrans = grapnelObj.GetComponent<Transform>();
 
-            Vector3 throwDirection = CamParent.forward + throwAddition;
+            Vector3 throwDirection = camParent.forward + throwAddition;
             grapnelTrans.GetComponent<Rigidbody>().velocity = (throwDirection.normalized * throwSpeed) + rig.velocity;
 
             thrownBool = true;
         }
     }
 
-    void GrapnelCast ()
+    void GrapnelCast () //  Test space in rope line
     {
         RaycastHit hit;
         Vector3 pos = transform.position + (transform.forward * 1.25f);
@@ -96,21 +131,23 @@ public class Grapnel : MonoBehaviour {
         }
     }
 
-    public void GrapnelDetach()
+    public void GrapnelDetach() //  Destroys grapnel after successful use
     {
         swinging = false;
         if (GetComponent<SpringJoint>())
             Destroy(gameObject.GetComponent<SpringJoint>());
     }
 
-    void GrapnelAttach(RaycastHit hit)
+    void GrapnelAttach(RaycastHit hit)  //  Creates spring joint
     {
         swinging = true;
 
         SpringJoint sj = gameObject.AddComponent<SpringJoint>();
         sj.autoConfigureConnectedAnchor = false;
-        sj.spring = Mathf.Infinity;
-        sj.damper = Mathf.Infinity;
+        
+        //          Mathf.Infinity bugs with high force / velocity
+        sj.spring = 9999999 * GetComponent<Rigidbody>().mass;
+        sj.damper = 9999999 * GetComponent<Rigidbody>().mass;
         sj.breakForce = 9999999 * GetComponent<Rigidbody>().mass;
         sj.enableCollision = true;
 
@@ -129,15 +166,5 @@ public class Grapnel : MonoBehaviour {
             sj.connectedAnchor = hit.point;
         }
         GrapnelDestroy();
-
-        //StartCoroutine (JointTest(sj));
-    }
-
-    IEnumerator JointTest (SpringJoint sj)
-    {
-        yield return new WaitForSeconds(1);
-        sj.maxDistance *= 0.95f;
-        yield return new WaitForSeconds(1);
-        sj.maxDistance *= 0.95f;
     }
 }
