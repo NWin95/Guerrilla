@@ -1,8 +1,4 @@
-﻿//
-//  Get this to work well when grounded
-//
-
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
 public class Grapnel : MonoBehaviour {
@@ -19,17 +15,17 @@ public class Grapnel : MonoBehaviour {
     Rigidbody rig;
     public float turnTime;
 
-    Vector3 rigVelCus;
-    Vector3 posA;
-    Vector3 posB;
+    //Vector3 rigVelCus;
+    //Vector3 posA;
+    //Vector3 posB;
 
-    Player_MovementHuman moveScript;
+    //Player_MovementHuman moveScript;
 
     void Start ()
     {
-        moveScript = GetComponent<Player_MovementHuman>();
+        //moveScript = GetComponent<Player_MovementHuman>();
         rig = GetComponent<Rigidbody>();
-        posB = rig.position;
+        //posB = rig.position;
 
         //Debug.Log(rig.position);
         //Debug.Log(transform.position);
@@ -68,8 +64,8 @@ public class Grapnel : MonoBehaviour {
         rigVelCus = dif / Time.fixedDeltaTime;
         posB = rig.position;
     }   */
-
-    void LookAtVel ()
+    /*
+    void LookAtVel ()                                   //Keep this for a while
     {
         //Vector3 lookVec = rig.velocity;
         bool mGrounded = moveScript.grounded;
@@ -83,17 +79,17 @@ public class Grapnel : MonoBehaviour {
         Quaternion lookRot = Quaternion.LookRotation(lookVec);
         Quaternion slerp = Quaternion.Slerp(playerVis.rotation, lookRot, Time.deltaTime / turnTime);
         playerVis.rotation = slerp;
-    }
-
+    }   */
+    
     public void GroundHit ()    //  Handle what happens when the ground is touched
     {
-        if (swinging || thrownBool)
+    /*    if (swinging || thrownBool)
         {
             //swinging = false;
             //thrownBool = false;
             GrapnelDetach();
             GrapnelDestroy();
-        }
+        }   */
     }
 
     public void GrapnelDestroy ()   //  Destroy grapnel when it's unconnected / not swinging
@@ -107,8 +103,8 @@ public class Grapnel : MonoBehaviour {
     {
         //Debug.Log(throwDirection.normalized);
 
-        if (!GetComponent<Player_MovementHuman>().grounded)
-        {
+        //if (!GetComponent<Player_MovementHuman>().grounded)
+        //{
             Vector3 pos = transform.position + (transform.forward * 1.25f);
             GameObject grapnelObj = Instantiate(grapnelPref, pos, Quaternion.identity) as GameObject;
             grapnelTrans = grapnelObj.GetComponent<Transform>();
@@ -117,7 +113,7 @@ public class Grapnel : MonoBehaviour {
             grapnelTrans.GetComponent<Rigidbody>().velocity = (throwDirection.normalized * throwSpeed) + rig.velocity;
 
             thrownBool = true;
-        }
+        //}
     }
 
     void GrapnelCast () //  Test space in rope line
