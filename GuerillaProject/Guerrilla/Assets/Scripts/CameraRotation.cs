@@ -11,6 +11,9 @@ public class CameraRotation : MonoBehaviour {
     public bool human;
 
 	void Start () {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+
         player = transform.parent;
         transform.SetParent(null);
 	}

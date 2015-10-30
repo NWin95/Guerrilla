@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Player_MovementHuman : MonoBehaviour {
 
+    public Animator animator;
     Rigidbody rig;
     public float maxSpeed;
     public float jumpHeight;
@@ -19,8 +20,14 @@ public class Player_MovementHuman : MonoBehaviour {
 
     float inputMag;
 
+    Vector3 nonKinVel;
+    Vector3 rigVelCus;
+    Vector3 posA;
+    Vector3 posB;
+
 	void Start () {
         rig = GetComponent<Rigidbody>();
+        posB = rig.position;
 	}
 	
 	// Update is called once per frame
@@ -29,12 +36,36 @@ public class Player_MovementHuman : MonoBehaviour {
         if (Input.GetButtonDown("Jump") && grounded)
             Jump();
         LookDirection();
+        AnimationFunc();
 	}
 
     void FixedUpdate ()
     {
         MovementFxied();
+        RigVelCusFunc();
     }
+
+    
+    void AnimationFunc ()
+    {
+        animator.SetBool("Grounded", grounded);
+        animator.SetFloat("Speed_Input", nonKinVel.magnitude);
+    }
+
+    void RigVelCusFunc ()       //      Gets velocity including added (rigVelCus) and gets only the added (nonKinVel)
+    {
+        posA = rig.position;
+        Vector3 dif = posA - posB;
+        Vector3 camVec = camParent.forward;
+        camVec.y = 0;
+        dif += camVec * 0.0001f;
+        rigVelCus = dif / Time.fixedDeltaTime;
+        posB = rig.position;
+
+        nonKinVel = rigVelCus - rig.velocity;
+        //Debug.Log(nonKinVel.magnitude);
+    }
+    
 
     void LookDirection ()
     {
@@ -100,6 +131,7 @@ public class Player_MovementHuman : MonoBehaviour {
     void MovementFxied ()
     {
         Vector3 inputVec = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        inputVec = Vector3.ClampMagnitude(inputVec, 1);
         inputMag = inputVec.magnitude;
         inputVec = transform.TransformDirection(inputVec);
 

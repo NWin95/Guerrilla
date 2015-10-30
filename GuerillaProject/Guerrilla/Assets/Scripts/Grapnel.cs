@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Grapnel : MonoBehaviour {
 
+    public Animator animator;
     public Transform playerVis;
     public GameObject grapnelPref;
     public Transform grapnelTrans;
@@ -14,6 +15,8 @@ public class Grapnel : MonoBehaviour {
     public Transform camParent;
     Rigidbody rig;
     public float turnTime;
+    bool grapnel;
+    Vector3 toGrapnel;
 
     //Vector3 rigVelCus;
     //Vector3 posA;
@@ -21,7 +24,7 @@ public class Grapnel : MonoBehaviour {
 
     //Player_MovementHuman moveScript;
 
-    void Start ()
+    void Start()
     {
         //moveScript = GetComponent<Player_MovementHuman>();
         rig = GetComponent<Rigidbody>();
@@ -31,7 +34,7 @@ public class Grapnel : MonoBehaviour {
         //Debug.Log(transform.position);
     }
 
-    void Update ()
+    void Update()
     {
         if (Input.GetButtonDown("Grapnel"))
             GrapnelThrow();
@@ -44,7 +47,15 @@ public class Grapnel : MonoBehaviour {
             GrapnelCast();
         //if (swinging)
         //    LookAtVel();
-        
+
+        LookAtFunc();
+        AnimationFunc();
+    }
+
+    void AnimationFunc()
+    {
+        animator.SetBool("Swinging", swinging);
+        animator.SetBool("GrapnelThrow", thrownBool);
     }
 
     /*
@@ -64,22 +75,35 @@ public class Grapnel : MonoBehaviour {
         rigVelCus = dif / Time.fixedDeltaTime;
         posB = rig.position;
     }   */
-    /*
-    void LookAtVel ()                                   //Keep this for a while
+    
+    void LookAtFunc ()                                   //Keep this for a while
     {
         //Vector3 lookVec = rig.velocity;
-        bool mGrounded = moveScript.grounded;
+        //bool mGrounded = moveScript.grounded;
 
-        Vector3 lookVec = rigVelCus;
-        if (mGrounded)
-            lookVec -= rig.velocity;
+        Vector3 lookVec = Vector3.zero;
+        if (swinging)
+            lookVec = rig.velocity + (transform.forward * 0.0001f);
+        else if (thrownBool)
+            lookVec = toGrapnel + (Vector3.up * 0.0001f);
+        else
+            lookVec = transform.forward;
+        //if (mGrounded)
+        //    lookVec -= rig.velocity;
         
         lookVec = lookVec.normalized;
 
+        if (lookVec == Vector3.zero)
+        {
+            Debug.Log("Warning Now");
+
+            Debug.Log("Swinging: " + swinging);
+            Debug.Log("Thrown: " + thrownBool);
+        }
         Quaternion lookRot = Quaternion.LookRotation(lookVec);
         Quaternion slerp = Quaternion.Slerp(playerVis.rotation, lookRot, Time.deltaTime / turnTime);
         playerVis.rotation = slerp;
-    }   */
+    }   
     
     public void GroundHit ()    //  Handle what happens when the ground is touched
     {
@@ -101,19 +125,14 @@ public class Grapnel : MonoBehaviour {
 
     void GrapnelThrow ()    //  Thow grapnel
     {
-        //Debug.Log(throwDirection.normalized);
+        Vector3 pos = transform.position + (transform.forward * 1.25f);
+        GameObject grapnelObj = Instantiate(grapnelPref, pos, Quaternion.identity) as GameObject;
+        grapnelTrans = grapnelObj.GetComponent<Transform>();
 
-        //if (!GetComponent<Player_MovementHuman>().grounded)
-        //{
-            Vector3 pos = transform.position + (transform.forward * 1.25f);
-            GameObject grapnelObj = Instantiate(grapnelPref, pos, Quaternion.identity) as GameObject;
-            grapnelTrans = grapnelObj.GetComponent<Transform>();
+        Vector3 throwDirection = camParent.forward + throwAddition;
+        grapnelTrans.GetComponent<Rigidbody>().velocity = (throwDirection.normalized * throwSpeed) + rig.velocity;
 
-            Vector3 throwDirection = camParent.forward + throwAddition;
-            grapnelTrans.GetComponent<Rigidbody>().velocity = (throwDirection.normalized * throwSpeed) + rig.velocity;
-
-            thrownBool = true;
-        //}
+        thrownBool = true;
     }
 
     void GrapnelCast () //  Test space in rope line
@@ -121,6 +140,9 @@ public class Grapnel : MonoBehaviour {
         RaycastHit hit;
         Vector3 pos = transform.position + (transform.forward * 1.25f);
         Vector3 gPos = grapnelTrans.position;
+
+        toGrapnel = gPos - pos;
+
         if (Physics.Linecast (pos, gPos, out hit, grapnelMask))
         {
             GrapnelAttach(hit);

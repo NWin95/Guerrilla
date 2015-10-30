@@ -43,12 +43,14 @@ public class Player_MovementBird : MonoBehaviour {
     void MovementFixed ()
     {
         Vector3 inputVec = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        inputVec = Vector3.ClampMagnitude(inputVec, 1);
         //inputMag = inputVec.magnitude;
         inputVec = transform.TransformDirection(inputVec);
 
         inputVel = inputVec * maxSpeed;
 
         rig.velocity = inputVel;
+        //Debug.Log(rig.velocity.magnitude);
 
         //Vector3 pos = transform.position;
         //rig.MovePosition(pos + (inputVel * Time.fixedDeltaTime));

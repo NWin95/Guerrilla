@@ -88,6 +88,8 @@ ModelImporter:
     7400004: InAir
     7400006: Run
     7400008: TPose
+    7400010: Grapnel_Throw
+    7400012: Grapnel_Swing
     9500000: //RootNode
     13700000: Hood
     13700002: HumanMesh
@@ -110,7 +112,483 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Default Take
+      takeName: Default Take
+      firstFrame: 1
+      lastFrame: 2
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hood
+        weight: 1
+      - path: Human
+        weight: 1
+      - path: Human/Pelvis
+        weight: 1
+      - path: Human/Pelvis/Stomach
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/Neck
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/Neck/Head
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/UpperArm_l
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/UpperArm_l/LowerArm_l
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/UpperArm_l/LowerArm_l/Hand_l
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/UpperArm_r
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/UpperArm_r/LowerArm_r
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/UpperArm_r/LowerArm_r/Hand_r
+        weight: 1
+      - path: Human/Pelvis/UpperLeg_l
+        weight: 1
+      - path: Human/Pelvis/UpperLeg_l/LowerLeg_l
+        weight: 1
+      - path: Human/Pelvis/UpperLeg_l/LowerLeg_l/Foot_l
+        weight: 1
+      - path: Human/Pelvis/UpperLeg_r
+        weight: 1
+      - path: Human/Pelvis/UpperLeg_r/LowerLeg_r
+        weight: 1
+      - path: Human/Pelvis/UpperLeg_r/LowerLeg_r/Foot_r
+        weight: 1
+      - path: HumanMesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Idle
+      takeName: Idle
+      firstFrame: 0
+      lastFrame: 499
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hood
+        weight: 1
+      - path: Human
+        weight: 1
+      - path: Human/Pelvis
+        weight: 1
+      - path: Human/Pelvis/Stomach
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/Neck
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/Neck/Head
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/UpperArm_l
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/UpperArm_l/LowerArm_l
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/UpperArm_l/LowerArm_l/Hand_l
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/UpperArm_r
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/UpperArm_r/LowerArm_r
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/UpperArm_r/LowerArm_r/Hand_r
+        weight: 1
+      - path: Human/Pelvis/UpperLeg_l
+        weight: 1
+      - path: Human/Pelvis/UpperLeg_l/LowerLeg_l
+        weight: 1
+      - path: Human/Pelvis/UpperLeg_l/LowerLeg_l/Foot_l
+        weight: 1
+      - path: Human/Pelvis/UpperLeg_r
+        weight: 1
+      - path: Human/Pelvis/UpperLeg_r/LowerLeg_r
+        weight: 1
+      - path: Human/Pelvis/UpperLeg_r/LowerLeg_r/Foot_r
+        weight: 1
+      - path: HumanMesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: InAir
+      takeName: InAir
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hood
+        weight: 1
+      - path: Human
+        weight: 1
+      - path: Human/Pelvis
+        weight: 1
+      - path: Human/Pelvis/Stomach
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/Neck
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/Neck/Head
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/UpperArm_l
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/UpperArm_l/LowerArm_l
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/UpperArm_l/LowerArm_l/Hand_l
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/UpperArm_r
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/UpperArm_r/LowerArm_r
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/UpperArm_r/LowerArm_r/Hand_r
+        weight: 1
+      - path: Human/Pelvis/UpperLeg_l
+        weight: 1
+      - path: Human/Pelvis/UpperLeg_l/LowerLeg_l
+        weight: 1
+      - path: Human/Pelvis/UpperLeg_l/LowerLeg_l/Foot_l
+        weight: 1
+      - path: Human/Pelvis/UpperLeg_r
+        weight: 1
+      - path: Human/Pelvis/UpperLeg_r/LowerLeg_r
+        weight: 1
+      - path: Human/Pelvis/UpperLeg_r/LowerLeg_r/Foot_r
+        weight: 1
+      - path: HumanMesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Run
+      takeName: Run
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hood
+        weight: 1
+      - path: Human
+        weight: 1
+      - path: Human/Pelvis
+        weight: 1
+      - path: Human/Pelvis/Stomach
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/Neck
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/Neck/Head
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/UpperArm_l
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/UpperArm_l/LowerArm_l
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/UpperArm_l/LowerArm_l/Hand_l
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/UpperArm_r
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/UpperArm_r/LowerArm_r
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/UpperArm_r/LowerArm_r/Hand_r
+        weight: 1
+      - path: Human/Pelvis/UpperLeg_l
+        weight: 1
+      - path: Human/Pelvis/UpperLeg_l/LowerLeg_l
+        weight: 1
+      - path: Human/Pelvis/UpperLeg_l/LowerLeg_l/Foot_l
+        weight: 1
+      - path: Human/Pelvis/UpperLeg_r
+        weight: 1
+      - path: Human/Pelvis/UpperLeg_r/LowerLeg_r
+        weight: 1
+      - path: Human/Pelvis/UpperLeg_r/LowerLeg_r/Foot_r
+        weight: 1
+      - path: HumanMesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: TPose
+      takeName: TPose
+      firstFrame: 1
+      lastFrame: 2
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hood
+        weight: 1
+      - path: Human
+        weight: 1
+      - path: Human/Pelvis
+        weight: 1
+      - path: Human/Pelvis/Stomach
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/Neck
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/Neck/Head
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/UpperArm_l
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/UpperArm_l/LowerArm_l
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/UpperArm_l/LowerArm_l/Hand_l
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/UpperArm_r
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/UpperArm_r/LowerArm_r
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/UpperArm_r/LowerArm_r/Hand_r
+        weight: 1
+      - path: Human/Pelvis/UpperLeg_l
+        weight: 1
+      - path: Human/Pelvis/UpperLeg_l/LowerLeg_l
+        weight: 1
+      - path: Human/Pelvis/UpperLeg_l/LowerLeg_l/Foot_l
+        weight: 1
+      - path: Human/Pelvis/UpperLeg_r
+        weight: 1
+      - path: Human/Pelvis/UpperLeg_r/LowerLeg_r
+        weight: 1
+      - path: Human/Pelvis/UpperLeg_r/LowerLeg_r/Foot_r
+        weight: 1
+      - path: HumanMesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Grapnel_Throw
+      takeName: Grapnel_Throw
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hood
+        weight: 1
+      - path: Human
+        weight: 1
+      - path: Human/Pelvis
+        weight: 1
+      - path: Human/Pelvis/Stomach
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/Neck
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/Neck/Head
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/UpperArm_l
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/UpperArm_l/LowerArm_l
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/UpperArm_l/LowerArm_l/Hand_l
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/UpperArm_r
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/UpperArm_r/LowerArm_r
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/UpperArm_r/LowerArm_r/Hand_r
+        weight: 1
+      - path: Human/Pelvis/UpperLeg_l
+        weight: 1
+      - path: Human/Pelvis/UpperLeg_l/LowerLeg_l
+        weight: 1
+      - path: Human/Pelvis/UpperLeg_l/LowerLeg_l/Foot_l
+        weight: 1
+      - path: Human/Pelvis/UpperLeg_r
+        weight: 1
+      - path: Human/Pelvis/UpperLeg_r/LowerLeg_r
+        weight: 1
+      - path: Human/Pelvis/UpperLeg_r/LowerLeg_r/Foot_r
+        weight: 1
+      - path: HumanMesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Grapnel_Swing
+      takeName: Grapnel_Swing
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hood
+        weight: 1
+      - path: Human
+        weight: 1
+      - path: Human/Pelvis
+        weight: 1
+      - path: Human/Pelvis/Stomach
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/Neck
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/Neck/Head
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/UpperArm_l
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/UpperArm_l/LowerArm_l
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/UpperArm_l/LowerArm_l/Hand_l
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/UpperArm_r
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/UpperArm_r/LowerArm_r
+        weight: 1
+      - path: Human/Pelvis/Stomach/Chest/UpperArm_r/LowerArm_r/Hand_r
+        weight: 1
+      - path: Human/Pelvis/UpperLeg_l
+        weight: 1
+      - path: Human/Pelvis/UpperLeg_l/LowerLeg_l
+        weight: 1
+      - path: Human/Pelvis/UpperLeg_l/LowerLeg_l/Foot_l
+        weight: 1
+      - path: Human/Pelvis/UpperLeg_r
+        weight: 1
+      - path: Human/Pelvis/UpperLeg_r/LowerLeg_r
+        weight: 1
+      - path: Human/Pelvis/UpperLeg_r/LowerLeg_r/Foot_r
+        weight: 1
+      - path: HumanMesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []
