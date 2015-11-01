@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Player_MovementBird : MonoBehaviour {
 
+    public Animator animator;
     public Transform camParent;
     Rigidbody rig;
     //float inputMag;
@@ -14,28 +15,29 @@ public class Player_MovementBird : MonoBehaviour {
         rig = GetComponent<Rigidbody>();
 	}
 	
-	
 	void Update () {
         LookDirection();
+        AnimationFunc();
 	}
 
     void FixedUpdate()
     {
         MovementFixed();
-        //LookDirection();
+    }
+
+    void AnimationFunc()
+    {
+        float angle = Vector3.Angle(transform.forward, Vector3.up);
+        float vel = rig.velocity.magnitude;
+
+        animator.SetFloat("Angle", angle);
+        animator.SetFloat("Velocity", vel);
     }
 
     void LookDirection()
     {
-        //Vector3 lookVec = camParent.forward;
-        //lookVec = lookVec.normalized;
-
-        //Quaternion lookRot = Quaternion.LookRotation(lookVec);
-        //Quaternion slerp = Quaternion.Slerp(transform.rotation, lookRot, Time.fixedDeltaTime / turnTime);     //Probably
-        //Quaternion slerp = Quaternion.Slerp(transform.rotation, lookRot, Time.deltaTime / turnTime);
         Quaternion targRot = camParent.rotation;
         Quaternion slerp = Quaternion.Slerp(transform.rotation, targRot, Time.deltaTime / turnTime);
-        //Quaternion slerp = Quaternion.Slerp(transform.rotation, targRot, Time.fixedDeltaTime / turnTime);
 
         transform.rotation = slerp;
     }
@@ -50,9 +52,5 @@ public class Player_MovementBird : MonoBehaviour {
         inputVel = inputVec * maxSpeed;
 
         rig.velocity = inputVel;
-        //Debug.Log(rig.velocity.magnitude);
-
-        //Vector3 pos = transform.position;
-        //rig.MovePosition(pos + (inputVel * Time.fixedDeltaTime));
     }
 }

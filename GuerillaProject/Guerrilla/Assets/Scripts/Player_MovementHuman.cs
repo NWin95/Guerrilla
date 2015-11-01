@@ -16,7 +16,7 @@ public class Player_MovementHuman : MonoBehaviour {
     bool gRayCheck;
     bool gContactCheck;
     bool groundedHold;
-    int contacts;
+    public int contacts;
 
     float inputMag;
 

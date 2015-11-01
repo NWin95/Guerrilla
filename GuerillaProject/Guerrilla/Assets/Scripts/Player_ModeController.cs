@@ -47,6 +47,9 @@ public class Player_ModeController : MonoBehaviour {
 
         rig.useGravity = true;
         rig.mass = 75;
+
+        camScript.camPosTarg = new Vector3(0, 2, -4);
+        camScript.camRotTarg = new Vector3(7.5f, 0, 0);
     }
 
     void SetBird ()
@@ -56,6 +59,10 @@ public class Player_ModeController : MonoBehaviour {
 
         humanVis.SetActive(false);
         birdVis.SetActive(true);
+
+        Player_MovementHuman humMove = GetComponent<Player_MovementHuman>();
+        humMove.grounded = false;
+        humMove.contacts = 0;
 
         GetComponent<Player_MovementBird>().enabled = true;
         GetComponent<Player_MovementHuman>().enabled = false;
@@ -67,5 +74,8 @@ public class Player_ModeController : MonoBehaviour {
 
         rig.useGravity = false;
         rig.mass = 50;
+
+        camScript.camPosTarg = new Vector3(0, 3, -7);
+        camScript.camRotTarg = new Vector3(7.5f, 0, 0);
     }
 }

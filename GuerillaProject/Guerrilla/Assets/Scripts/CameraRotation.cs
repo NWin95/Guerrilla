@@ -4,9 +4,16 @@ using System.Collections;
 public class CameraRotation : MonoBehaviour {
 
     public bool invertY;
+    public Transform camTrans;
     public Vector3 rotSpeedH;
     public Vector3 rotSpeedB;
     public Transform player;
+
+    public float camTransTime;
+    public float camRotTime;
+
+    public Vector3 camPosTarg;
+    public Vector3 camRotTarg;
 
     public bool human;
 
@@ -22,6 +29,7 @@ public class CameraRotation : MonoBehaviour {
 	void Update () {
         //CamMove();
         CamRot();
+        CamLerp();
 	}
 
     void LateUpdate ()
@@ -30,12 +38,17 @@ public class CameraRotation : MonoBehaviour {
         //CamRot();
     }
 
-    /*
-    void FixedUpdate ()
+    void CamLerp ()
     {
-        //CamMove();
-        //CamRot();
-    }   */
+        Vector3 pos = camTrans.localPosition;
+        Vector3 rot = camTrans.localEulerAngles;
+
+        pos = Vector3.Lerp(pos, camPosTarg, Time.deltaTime / camTransTime);
+        rot = Vector3.Slerp(rot, camRotTarg, Time.deltaTime / camRotTime);
+
+        camTrans.localPosition = pos;
+        camTrans.localEulerAngles = rot;
+    }
 
     void CamMove ()
     {

@@ -9,11 +9,11 @@ FBXHeaderExtension:  {
 	CreationTimeStamp:  {
 		Version: 1000
 		Year: 2015
-		Month: 10
-		Day: 26
-		Hour: 01
-		Minute: 45
-		Second: 17
+		Month: 11
+		Day: 01
+		Hour: 15
+		Minute: 15
+		Second: 10
 		Millisecond: 0
 	}
 	Creator: "FBX SDK/FBX Plugins build 20070228"
@@ -21,7 +21,7 @@ FBXHeaderExtension:  {
 		FlagPLE: 0
 	}
 }
-CreationTime: "2015-10-26 01:45:17:000"
+CreationTime: "2015-11-01 15:15:10:000"
 Creator: "Blender version 2.70 (sub 0)"
 
 ; Object definitions
@@ -3550,8 +3550,6224 @@ Takes:  {
 	Current: "Default Take"
 	Take: "Default Take" {
 		FileName: "Default_Take.tak"
-		LocalTime: 0,479181389250
-		ReferenceTime: 0,479181389250
+		LocalTime: 0,26941925500
+		ReferenceTime: 0,26941925500
+
+		;Models animation
+		;----------------------------------------------------
+		Model: "Model::Pelvis" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: -0.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000000000000000,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.107853651046753
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.107853651046753,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.000000000116415
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000000116415,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: 0.000011743926109
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000011743926109,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -26.388031169598026
+						KeyVer: 4005
+						KeyCount: 12
+						Key: 
+							0,-26.388031169598026,L,
+							7697693000,-26.388031169598026,L,
+							9622116250,-26.832369126052566,L,
+							11546539500,-28.084223272603630,L,
+							13470962750,-29.691829529621590,L,
+							15395386000,-30.943693921456408,L,
+							17319809250,-31.388031877910947,L,
+							19244232500,-30.943690506361822,L,
+							21168655750,-29.691829529621590,L,
+							23093079000,-28.084223272603630,L,
+							25017502250,-26.832369126052566,L,
+							26941925500,-26.388031169598026,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -90.000009334538021
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-90.000009334538021,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 1.000000238418579
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000238418579,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.999999940395355
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999940395355,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::Chest" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.326203167438507
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.326203167438507,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.000000024627655
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000024627655,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.000000000000002
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000000000002,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: -0.000021542797998
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000021542797998,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 27.565077669264632
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,27.565077669264632,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -0.000007595923434
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000007595923434,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 0.999999821186066
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999821186066,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.999999940395355
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999940395355,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.999999821186066
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999821186066,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::Neck" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.530363380908966
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.530363380908966,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.000000040041321
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000040041321,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.000000020489088
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000020489088,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: 0.000016492680502
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000016492680502,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -0.034809422109739
+						KeyVer: 4005
+						KeyCount: 10
+						Key: 
+							0,-0.034809422109739,L,
+							1924423250,-1.416563091168626,L,
+							5773269750,-8.653061645318232,L,
+							7697693000,-10.034810621957119,L,
+							9622116250,-9.146769916640848,L,
+							11546539500,-6.643110288636557,L,
+							13470962750,-3.426507617661132,L,
+							15395386000,-0.922855353454541,L,
+							17319809250,-0.034813050647735,L,
+							26941925500,-0.034809422109739,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.000003650993832
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000003650993832,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 0.999999821186066
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999821186066,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.999999940395355
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999940395355,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.999999940395355
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999940395355,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::Head" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.503173947334290
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.503173947334290,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.000000037988574
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000037988574,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -0.000000003725278
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000000003725278,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: -0.000004055543289
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000004055543289,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 37.035495245952418
+						KeyVer: 4005
+						KeyCount: 10
+						Key: 
+							0,37.035495245952418,L,
+							1924423250,38.417242515044016,L,
+							5773269750,45.653735733108334,L,
+							7697693000,47.035496662578268,L,
+							9622116250,46.147442296883654,L,
+							11546539500,43.643792060389472,L,
+							13470962750,40.427186187762878,L,
+							15395386000,37.923529121079525,L,
+							17319809250,37.035488415763254,L,
+							26941925500,37.035495245952418,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -0.000004815882518
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000004815882518,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 0.999999880790710
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999880790710,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.999999940395355
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999940395355,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.999999880790710
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999880790710,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::UpperWing_r" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.361816048622131
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.361816048622131,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -0.416100293397903
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.416100293397903,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.010489921085536
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.010489921085536,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: -3.489650795547105
+						KeyVer: 4005
+						KeyCount: 15
+						Key: 
+							0,-3.489650795547105,L,
+							1924423250,2.425762387737465,L,
+							3848846500,17.854747990433196,L,
+							5773269750,34.393441471211887,L,
+							7697693000,41.294657778393685,L,
+							9622116250,40.092609371270278,L,
+							11546539500,35.624565993631990,L,
+							13470962750,27.267120912007009,L,
+							15395386000,17.439685932308581,L,
+							17319809250,10.099010985060561,L,
+							19244232500,5.133882661328736,L,
+							21168655750,1.109740641646634,L,
+							23093079000,-1.641729988832999,L,
+							25017502250,-3.085711273599016,L,
+							26941925500,-3.489650795547105,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -18.479780308927456
+						KeyVer: 4005
+						KeyCount: 15
+						Key: 
+							0,-18.479780308927456,L,
+							1924423250,-12.365053454482327,L,
+							3848846500,4.551165072289935,L,
+							5773269750,20.770246681047507,L,
+							7697693000,26.235610375627534,L,
+							9622116250,22.596586331140227,L,
+							11546539500,12.090467043243516,L,
+							13470962750,-1.390778593443336,L,
+							15395386000,-11.624809505068457,L,
+							17319809250,-16.418000623050151,L,
+							19244232500,-18.091992903705954,L,
+							21168655750,-18.685976889780676,L,
+							23093079000,-18.724584534064117,L,
+							25017502250,-18.575090476152969,L,
+							26941925500,-18.479780308927456,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -90.064513641059534
+						KeyVer: 4005
+						KeyCount: 15
+						Key: 
+							0,-90.064513641059534,L,
+							1924423250,-91.184043117725537,L,
+							3848846500,-90.990045254729949,L,
+							5773269750,-86.040890182145816,L,
+							7697693000,-82.825653762447814,L,
+							9622116250,-80.737166329368506,L,
+							11546539500,-74.594825020109042,L,
+							13470962750,-65.680335322988014,L,
+							15395386000,-57.532998813063372,L,
+							17319809250,-54.206741083501548,L,
+							19244232500,-57.162887937413835,L,
+							21168655750,-66.010581799546827,L,
+							23093079000,-77.692431921921269,L,
+							25017502250,-86.834605975024346,L,
+							26941925500,-90.064513641059534,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 0.999999880790710
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999880790710,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::LowerWing_r" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 1.243294358253479
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.243294358253479,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.000000093132257
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000093132257,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -0.000000070780516
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000000070780516,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: 1.368339714472584
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.368339714472584,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -2.217442044939198
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-2.217442044939198,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -57.369654839062754
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-57.369654839062754,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.999999940395355
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999940395355,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::UpperWing_l" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.361815959215164
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.361815959215164,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.416100353002548
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.416100353002548,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.010490044951439
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.010490044951439,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: 3.489652929981221
+						KeyVer: 4005
+						KeyCount: 15
+						Key: 
+							0,3.489652929981221,L,
+							1924423250,-2.425761107076995,L,
+							3848846500,-17.854747990433196,L,
+							5773269750,-34.393438056117297,L,
+							7697693000,-41.294657778393685,L,
+							9622116250,-40.092605956175696,L,
+							11546539500,-35.624552333253646,L,
+							13470962750,-27.267112374270546,L,
+							15395386000,-17.439677394572119,L,
+							17319809250,-10.099001593550453,L,
+							19244232500,-5.133873696705449,L,
+							21168655750,-1.109731143414819,L,
+							23093079000,1.641732977040761,L,
+							25017502250,3.085716182797482,L,
+							26941925500,3.489652929981221,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -18.479797384400381
+						KeyVer: 4005
+						KeyCount: 15
+						Key: 
+							0,-18.479797384400381,L,
+							1924423250,-12.365072237502545,L,
+							3848846500,4.551147569930187,L,
+							5773269750,20.770229605574581,L,
+							7697693000,26.235595007701900,L,
+							9622116250,22.596565840572715,L,
+							11546539500,12.090443137581421,L,
+							13470962750,-1.390798977289141,L,
+							15395386000,-11.624826580541381,L,
+							17319809250,-16.418021113617662,L,
+							19244232500,-18.092009979178879,L,
+							21168655750,-18.685997380348187,L,
+							23093079000,-18.724603317084334,L,
+							25017502250,-18.575114381815066,L,
+							26941925500,-18.479797384400381,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 90.064513641059534
+						KeyVer: 4005
+						KeyCount: 15
+						Key: 
+							0,90.064513641059534,L,
+							1924423250,91.184043117725537,L,
+							3848846500,90.990045254729949,L,
+							5773269750,86.040890182145816,L,
+							7697693000,82.825653762447814,L,
+							9622116250,80.737173159557670,L,
+							11546539500,74.594831850298220,L,
+							13470962750,65.680348983366358,L,
+							15395386000,57.532991982874201,L,
+							17319809250,54.206727423123205,L,
+							19244232500,57.162894767603007,L,
+							21168655750,66.010574969357663,L,
+							23093079000,77.692431921921269,L,
+							25017502250,86.834605975024346,L,
+							26941925500,90.064513641059534,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 0.999999880790710
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999880790710,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::LowerWing_l" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 1.243294477462769
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.243294477462769,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.000000044703484
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000044703484,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -0.000000081956387
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000000081956387,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: -1.368339394307467
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-1.368339394307467,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -2.217442898712845
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-2.217442898712845,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 57.369654839062754
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,57.369654839062754,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 0.999999880790710
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999880790710,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.999999880790710
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999880790710,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::UpperLeg_r" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.105793870985508
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.105793870985508,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -0.209405034780502
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.209405034780502,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -0.210433185100555
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.210433185100555,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: -179.020583202475962
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-179.020583202475962,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 59.210431801513565
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,59.210431801513565,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 5.324016771688223
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,5.324016771688223,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 1.000000119209290
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000119209290,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.999999761581421
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999761581421,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::LowerLeg_r" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.354144364595413
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.354144364595413,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.000000037252903
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000037252903,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -0.000000010244548
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000000010244548,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: -3.951412991461147
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-3.951412991461147,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -93.610679556233350
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-93.610679556233350,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 3.548037600449817
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,3.548037600449817,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 1.000000238418579
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000238418579,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 1.000000238418579
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000238418579,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.999999940395355
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999940395355,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::Talon_r" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.343979507684708
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.343979507684708,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.000000041909516
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000041909516,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -0.000000068917871
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000000068917871,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: 7.505404595876502
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,7.505404595876502,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -50.554857500354416
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-50.554857500354416,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -26.021699096106797
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-26.021699096106797,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 1.000000119209290
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000119209290,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.999999880790710
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999880790710,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::UpperLeg_l" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.105793848633766
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.105793848633766,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.209405034780502
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.209405034780502,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -0.210433214902878
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.210433214902878,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: 179.020569542097633
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,179.020569542097633,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 59.210424971324393
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,59.210424971324393,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -5.324013783480461
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-5.324013783480461,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.999999821186066
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999821186066,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.999999761581421
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999761581421,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::LowerLeg_l" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.354144334793091
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.354144334793091,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.000000017695129
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000017695129,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.000000020489097
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000020489097,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: 3.951273399469985
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,3.951273399469985,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -93.610679556233350
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-93.610679556233350,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -3.547884988410550
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-3.547884988410550,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.999999880790710
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999880790710,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::Talon_l" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.343979507684708
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.343979507684708,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.000000033527613
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000033527613,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.000000005587935
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000005587935,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: -7.505390935498163
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-7.505390935498163,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -50.554871160732759
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-50.554871160732759,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 26.021699096106797
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,26.021699096106797,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 0.999999880790710
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999880790710,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.999999821186066
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999821186066,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::Tail" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: -0.755466639995575
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.755466639995575,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -0.000000011435626
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000000011435626,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.301998555660248
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.301998555660248,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: -0.000012900195441
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000012900195441,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 51.549179364250520
+						KeyVer: 4005
+						KeyCount: 10
+						Key: 
+							0,51.549179364250520,L,
+							1924423250,50.167408189496832,L,
+							5773269750,42.930925216716268,L,
+							7697693000,41.549181362719260,L,
+							17319809250,41.549181362719260,L,
+							19244232500,42.437232313319285,L,
+							21168655750,44.940879134718884,L,
+							23093079000,48.157474762061725,L,
+							25017502250,50.661118168366734,L,
+							26941925500,51.549179364250520,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 179.999991348319355
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,179.999991348319355,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 0.999999821186066
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999821186066,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.999999880790710
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999880790710,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.999999761581421
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999761581421,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::Bird" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000000000000,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000000000000,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000000000000,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: -90.000002504348856
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-90.000002504348856,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -0.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000000000000000,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000000000000,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+	}
+	Take: "Dive" {
+		FileName: "Dive.tak"
+		LocalTime: 0,36564041750
+		ReferenceTime: 0,36564041750
+
+		;Models animation
+		;----------------------------------------------------
+		Model: "Model::Pelvis" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: -0.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000000000000000,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.107853651046753
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.107853651046753,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.000000000116415
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000000116415,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: 0.000009135714126
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000009135714126,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -6.388034739648681
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-6.388034739648681,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -90.000002504348856
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-90.000002504348856,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 1.000000238418579
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000238418579,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.999999940395355
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999940395355,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::Chest" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.326203197240829
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.326203197240829,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.000000024627658
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000024627658,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.000000004656613
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000004656613,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: -0.000018479277958
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000018479277958,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 12.565075544325863
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,12.565075544325863,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -0.000002034430759
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000002034430759,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::Neck" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.530363321304321
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.530363321304321,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.000000040041325
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000040041325,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.000000011175871
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000011175871,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: 0.000016935019630
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000016935019630,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -5.034811194304666
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-5.034811194304666,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.000002191470163
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000002191470163,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 0.999999940395355
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999940395355,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.999999940395355
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999940395355,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.999999940395355
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999940395355,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::Head" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.503173887729645
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.503173887729645,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.000000037988567
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000037988567,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -0.000000004190955
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000000004190955,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: -0.000000786111544
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000000786111544,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 2.035487939884435
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,2.035487939884435,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -0.000003271038969
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000003271038969,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 0.999999880790710
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999880790710,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.999999940395355
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999940395355,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::UpperWing_r" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.361815989017487
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.361815989017487,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -0.416100293397903
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.416100293397903,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.010489914566278
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.010489914566278,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: -69.157598289814857
+						KeyVer: 4005
+						KeyCount: 20
+						Key: 
+							0,-69.157598289814857,L,
+							1924423250,-69.141096552780127,L,
+							3848846500,-69.091666473756817,L,
+							5773269750,-69.012504581276474,L,
+							7697693000,-68.912257894828343,L,
+							9622116250,-68.804675585211626,L,
+							11546539500,-68.705528559219871,L,
+							13470962750,-68.628026402707846,L,
+							15395386000,-68.579941870951018,L,
+							17319809250,-68.563959228293214,L,
+							19244232500,-68.576888776392025,L,
+							21168655750,-68.615902816931083,L,
+							23093079000,-68.679546519617176,L,
+							25017502250,-68.763168525625517,L,
+							26941925500,-68.858381362655365,L,
+							28866348750,-68.954106463872947,L,
+							30790772000,-69.038971564310245,L,
+							32715195250,-69.104097418046223,L,
+							34639618500,-69.144245269987493,L,
+							36564041750,-69.157598289814857,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 30.712577395416432
+						KeyVer: 4005
+						KeyCount: 20
+						Key: 
+							0,30.712577395416432,L,
+							1924423250,30.708602225319492,L,
+							3848846500,30.696441073502299,L,
+							5773269750,30.676247619221186,L,
+							7697693000,30.649357164458884,L,
+							9622116250,30.618860369814822,L,
+							11546539500,30.589220763911595,L,
+							13470962750,30.564997498020180,L,
+							15395386000,30.549503213888027,L,
+							17319809250,30.544274704078390,L,
+							19244232500,30.548509421363793,L,
+							21168655750,30.561121365666203,L,
+							23093079000,30.581198706731428,L,
+							25017502250,30.606627501011346,L,
+							26941925500,30.634303427528199,L,
+							28866348750,30.660760165278205,L,
+							30790772000,30.683101714053286,L,
+							32715195250,30.699531734101726,L,
+							34639618500,30.709360376317360,L,
+							36564041750,30.712577395416432,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -164.401068718083252
+						KeyVer: 4005
+						KeyCount: 20
+						Key: 
+							0,-164.401068718083252,L,
+							1924423250,-164.256514594489317,L,
+							3848846500,-163.822797582194141,L,
+							5773269750,-163.126405154798960,L,
+							7697693000,-162.240652562854649,L,
+							9622116250,-161.285300343268005,L,
+							11546539500,-160.400217109862325,L,
+							13470962750,-159.704808229707652,L,
+							15395386000,-159.271869858977851,L,
+							17319809250,-159.127616263707381,L,
+							19244232500,-159.244357857001091,L,
+							21168655750,-159.595784750176080,L,
+							23093079000,-160.167362300678604,L,
+							25017502250,-160.915295335550610,L,
+							26941925500,-161.762935471926312,L,
+							28866348750,-162.610862476247149,L,
+							30790772000,-163.359533171549515,L,
+							32715195250,-163.931998646644132,L,
+							34639618500,-164.284081237979450,L,
+							36564041750,-164.401068718083252,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 0.999999821186066
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999821186066,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.999999880790710
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999880790710,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.999999940395355
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999940395355,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::LowerWing_r" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 1.243294358253479
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.243294358253479,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.000000089406967
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000089406967,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.000000026077032
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000026077032,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: 0.670939940896555
+						KeyVer: 4005
+						KeyCount: 20
+						Key: 
+							0,0.670939940896555,L,
+							1924423250,0.678600585020095,L,
+							3848846500,0.701018493175661,L,
+							5773269750,0.735274880070988,L,
+							7697693000,0.775762587284326,L,
+							9622116250,0.815566048281047,L,
+							11546539500,0.848876453976328,L,
+							13470962750,0.872642897606147,L,
+							15395386000,0.886368162743267,L,
+							17319809250,0.890756772728406,L,
+							19244232500,0.887213452013908,L,
+							21168655750,0.876176079758595,L,
+							23093079000,0.857069586050864,L,
+							25017502250,0.829907151021379,L,
+							26941925500,0.796164469056830,L,
+							28866348750,0.759260583445334,L,
+							30790772000,0.724045835632092,L,
+							32715195250,0.695451995723815,L,
+							34639618500,0.677144580788121,L,
+							36564041750,0.670939940896555,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -1.145137136524822
+						KeyVer: 4005
+						KeyCount: 19
+						Key: 
+							0,-1.145137136524822,L,
+							1924423250,-1.014564730326993,L,
+							3848846500,-0.622737001407170,L,
+							5773269750,0.006599936672898,L,
+							7697693000,0.807474195105297,L,
+							9622116250,1.671774070001138,L,
+							11546539500,2.472979485469695,L,
+							13470962750,3.102801687562832,L,
+							15395386000,3.495031277065775,L,
+							17319809250,3.625752560043169,L,
+							19244232500,3.519960613762639,L,
+							21168655750,3.201564942300605,L,
+							23093079000,2.683839377978733,L,
+							25017502250,2.006666676021139,L,
+							28866348750,0.472679026002675,L,
+							30790772000,-0.204118442437392,L,
+							32715195250,-0.721405754074474,L,
+							34639618500,-1.039470908413703,L,
+							36564041750,-1.145137136524822,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -22.619033747847439
+						KeyVer: 4005
+						KeyCount: 20
+						Key: 
+							0,-22.619033747847439,L,
+							1924423250,-22.659697279071054,L,
+							3848846500,-22.781597372735387,L,
+							5773269750,-22.977041528287728,L,
+							7697693000,-23.225166932908301,L,
+							9622116250,-23.492341735124015,L,
+							11546539500,-23.739558724584978,L,
+							13470962750,-23.933647087587076,L,
+							15395386000,-24.054440690605869,L,
+							17319809250,-24.094682457648233,L,
+							19244232500,-24.062110993043781,L,
+							21168655750,-23.964068750150268,L,
+							23093079000,-23.804559927368604,L,
+							25017502250,-23.595721770853888,L,
+							26941925500,-23.358813244397751,L,
+							28866348750,-23.121510274517046,L,
+							30790772000,-22.911647589626828,L,
+							32715195250,-22.750921285625612,L,
+							34639618500,-22.651948429457683,L,
+							36564041750,-22.619033747847439,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.999999761581421
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999761581421,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.999999761581421
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999761581421,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::UpperWing_l" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.361815929412842
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.361815929412842,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.416100353002548
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.416100353002548,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.010490038432181
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.010490038432181,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: 68.727713013644035
+						KeyVer: 4005
+						KeyCount: 20
+						Key: 
+							0,68.727713013644035,L,
+							1924423250,68.711088333204245,L,
+							3848846500,68.661248442830740,L,
+							5773269750,68.581437682379246,L,
+							7697693000,68.480316731717366,L,
+							9622116250,68.371757705049333,L,
+							11546539500,68.271668112952113,L,
+							13470962750,68.193373654496369,L,
+							15395386000,68.144817839686809,L,
+							17319809250,68.128657612110587,L,
+							19244232500,68.141730594181979,L,
+							21168655750,68.181147615882054,L,
+							23093079000,68.245426526160955,L,
+							25017502250,68.329854494491371,L,
+							26941925500,68.425955256113312,L,
+							28866348750,68.522527300787971,L,
+							30790772000,68.608130061655629,L,
+							32715195250,68.673788670146863,L,
+							34639618500,68.714257540979133,L,
+							36564041750,68.727713013644035,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 30.877645992182480
+						KeyVer: 4005
+						KeyCount: 20
+						Key: 
+							0,30.877645992182480,L,
+							1924423250,30.873991840976526,L,
+							3848846500,30.862824481683571,L,
+							5773269750,30.844205386006145,L,
+							7697693000,30.819319591765240,L,
+							9622116250,30.790964061425971,L,
+							11546539500,30.763294965098289,L,
+							13470962750,30.740618737053879,L,
+							15395386000,30.726087509594699,L,
+							17319809250,30.721173188486880,L,
+							19244232500,30.725151773678409,L,
+							21168655750,30.736988491510022,L,
+							23093079000,30.755788587200456,L,
+							25017502250,30.779557645512067,L,
+							26941925500,30.805334779439658,L,
+							28866348750,30.829885894411234,L,
+							30790772000,30.850530141177568,L,
+							32715195250,30.865665840378295,L,
+							34639618500,30.874688520271867,L,
+							36564041750,30.877645992182480,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 165.725210171715048
+						KeyVer: 4005
+						KeyCount: 20
+						Key: 
+							0,165.725210171715048,L,
+							1924423250,165.580546765094397,L,
+							3848846500,165.146488243340713,L,
+							5773269750,164.449576721568633,L,
+							7697693000,163.563113789950620,L,
+							9622116250,162.607010249555259,L,
+							11546539500,161.721162034962560,L,
+							13470962750,161.025152098160930,L,
+							15395386000,160.591858557594293,L,
+							17319809250,160.447468358540419,L,
+							19244232500,160.564305574482489,L,
+							21168655750,160.916046656359299,L,
+							23093079000,161.488115980482064,L,
+							25017502250,162.236677392757713,L,
+							26941925500,163.085014208428760,L,
+							28866348750,163.933624231666585,L,
+							30790772000,164.682882323237578,L,
+							32715195250,165.255784930439091,L,
+							34639618500,165.608140729341187,L,
+							36564041750,165.725210171715048,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 0.999999880790710
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999880790710,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.999999880790710
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999880790710,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::LowerWing_l" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 1.243294477462769
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.243294477462769,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.000000119209290
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000119209290,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -0.000000014901161
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000000014901161,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: 0.151779156394909
+						KeyVer: 4005
+						KeyCount: 20
+						Key: 
+							0,0.151779156394909,L,
+							1924423250,0.143013075502673,L,
+							3848846500,0.117290636449295,L,
+							5773269750,0.077787103466459,L,
+							7697693000,0.030736841775845,L,
+							9622116250,-0.016018446122570,L,
+							11546539500,-0.055654502451086,L,
+							13470962750,-0.084322967512131,L,
+							15395386000,-0.101072732461200,L,
+							17319809250,-0.106464052903113,L,
+							19244232500,-0.102110040760968,L,
+							21168655750,-0.088620630593624,L,
+							23093079000,-0.065498552612993,L,
+							25017502250,-0.033022497213510,L,
+							26941925500,0.006839632790320,L,
+							28866348750,0.049971334829448,L,
+							30790772000,0.090767124262003,L,
+							32715195250,0.123686201472504,L,
+							34639618500,0.144678374339898,L,
+							36564041750,0.151779156394909,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -2.601047453397954
+						KeyVer: 4005
+						KeyCount: 19
+						Key: 
+							0,-2.601047453397954,L,
+							1924423250,-2.470906309613188,L,
+							3848846500,-2.080362709618178,L,
+							5773269750,-1.453070879169115,L,
+							7697693000,-0.654763384899344,L,
+							9622116250,0.206804747833827,L,
+							11546539500,1.005514729676739,L,
+							13470962750,1.633395343776597,L,
+							15395386000,2.024425594749970,L,
+							17319809250,2.154747951991153,L,
+							19244232500,2.049277878375260,L,
+							21168655750,1.731854868539717,L,
+							23093079000,1.215718710582046,L,
+							25017502250,0.540649280001989,L,
+							28866348750,-0.988488562179803,L,
+							30790772000,-1.663106239779287,L,
+							32715195250,-2.178709109373170,L,
+							34639618500,-2.495727003613567,L,
+							36564041750,-2.601047453397954,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 22.339719991929339
+						KeyVer: 4005
+						KeyCount: 20
+						Key: 
+							0,22.339719991929339,L,
+							1924423250,22.381770051554462,L,
+							3848846500,22.507809239855820,L,
+							5773269750,22.709788178896559,L,
+							7697693000,22.966084197311751,L,
+							9622116250,23.241865037881666,L,
+							11546539500,23.496883810922068,L,
+							13470962750,23.696972495110010,L,
+							15395386000,23.821454400280608,L,
+							17319809250,23.862922186278986,L,
+							19244232500,23.829363759339468,L,
+							21168655750,23.728317940758448,L,
+							23093079000,23.563903334605428,L,
+							25017502250,23.348525271960433,L,
+							26941925500,23.104072801566026,L,
+							28866348750,22.859036349997588,L,
+							30790772000,22.642222240079601,L,
+							32715195250,22.476088133803032,L,
+							34639618500,22.373751409468881,L,
+							36564041750,22.339719991929339,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 1.000000119209290
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000119209290,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 1.000000119209290
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000119209290,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 1.000000238418579
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000238418579,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::UpperLeg_r" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.089774414896965
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.089774414896965,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -0.210822522640228
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.210822522640228,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -0.192020088434219
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.192020088434219,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: -0.556764097492406
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.556764097492406,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 25.784829843238384
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,25.784829843238384,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -175.759564024771436
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-175.759564024771436,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 0.999999761581421
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999761581421,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 1.000000238418579
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000238418579,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 1.000000238418579
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000238418579,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::LowerLeg_r" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.354144394397736
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.354144394397736,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.000000028341809
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000028341809,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -0.000000000931323
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000000000931323,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: 0.262357704581862
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.262357704581862,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -18.601931412043790
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-18.601931412043790,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -0.479251215448952
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.479251215448952,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 0.999999821186066
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999821186066,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 1.000000119209290
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000119209290,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 1.000000119209290
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000119209290,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::Talon_r" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.343979477882385
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.343979477882385,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.000000002324368
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000002324368,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -0.000000026077032
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000000026077032,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: 5.039398093219146
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,5.039398093219146,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 19.134636648432537
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,19.134636648432537,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -18.556718974832954
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-18.556718974832954,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.999999821186066
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999821186066,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::UpperLeg_l" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.089774392545223
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.089774392545223,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.210822492837906
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.210822492837906,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -0.192020162940025
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.192020162940025,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: 0.556774236054455
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.556774236054455,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 25.784836673427556
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,25.784836673427556,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 175.759577685149765
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,175.759577685149765,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 0.999999880790710
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999880790710,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.999999940395355
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999940395355,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.999999940395355
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999940395355,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::LowerLeg_l" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.354144394397736
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.354144394397736,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.000000032765268
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000032765268,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -0.000000003725290
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000000003725290,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: -0.262351568083780
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.262351568083780,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -18.601934827138376
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-18.601934827138376,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.479251909140039
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.479251909140039,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 1.000000119209290
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000119209290,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 1.000000119209290
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000119209290,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::Talon_l" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.343979477882385
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.343979477882385,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.000000049175092
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000049175092,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.000000015832484
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000015832484,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: -5.039403215861023
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-5.039403215861023,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 19.134640063527122
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,19.134640063527122,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 18.556717267285663
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,18.556717267285663,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 1.000000238418579
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000238418579,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::Tail" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: -0.755466699600220
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.755466699600220,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -0.000000011435624
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000000011435624,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.301998615264893
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.301998615264893,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: -0.000004732390973
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000004732390973,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -3.450830561625747
+						KeyVer: 4005
+						KeyCount: 19
+						Key: 
+							0,-3.450830561625747,L,
+							1924423250,-3.587759205898204,L,
+							3848846500,-3.998627100985615,L,
+							5773269750,-4.658448561130463,L,
+							7697693000,-5.497944977581409,L,
+							9622116250,-6.403721976624886,L,
+							11546539500,-7.243218393075831,L,
+							13470962750,-7.903036865012917,L,
+							15395386000,-8.313904333213506,L,
+							17319809250,-8.450833404372785,L,
+							19244232500,-8.340019561505011,L,
+							21168655750,-8.006493740370951,L,
+							23093079000,-7.464128055174882,L,
+							25017502250,-6.754640020706711,L,
+							28866348750,-5.147026506612760,L,
+							30790772000,-4.437536764597296,L,
+							32715195250,-3.895170225627581,L,
+							34639618500,-3.561641843172582,L,
+							36564041750,-3.450830561625747,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 180.000005008697713
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,180.000005008697713,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 0.999999582767487
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999582767487,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.999999940395355
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999940395355,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::Bird" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000000000000,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000000000000,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000000000000,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: -90.000002504348856
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-90.000002504348856,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -0.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000000000000000,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000000000000,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+	}
+	Take: "Fly" {
+		FileName: "Fly.tak"
+		LocalTime: 0,26941925500
+		ReferenceTime: 0,26941925500
+
+		;Models animation
+		;----------------------------------------------------
+		Model: "Model::Pelvis" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: -0.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000000000000000,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.107853651046753
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.107853651046753,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.000000000116415
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000000116415,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: 0.000009135714126
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000009135714126,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -6.388034739648681
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-6.388034739648681,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -90.000002504348856
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-90.000002504348856,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 1.000000238418579
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000238418579,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.999999940395355
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999940395355,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::Chest" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.326203197240829
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.326203197240829,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.000000024627658
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000024627658,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.000000004656613
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000004656613,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: -0.000018479277958
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000018479277958,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 12.565075544325863
+						KeyVer: 4005
+						KeyCount: 12
+						Key: 
+							0,12.565075544325863,L,
+							7697693000,12.565075544325863,L,
+							9622116250,13.009414354554051,L,
+							11546539500,14.261270208652407,L,
+							13470962750,15.868882442085889,L,
+							15395386000,17.120738296184246,L,
+							17319809250,17.565074545091495,L,
+							19244232500,17.120738296184246,L,
+							21168655750,15.868882442085889,L,
+							23093079000,14.261269354878760,L,
+							25017502250,13.009414354554051,L,
+							26941925500,12.565075544325863,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -0.000002034430759
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000002034430759,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::Neck" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.530363321304321
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.530363321304321,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.000000040041325
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000040041325,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.000000011175871
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000011175871,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: 0.000020220226265
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000020220226265,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -25.034808478027657
+						KeyVer: 4005
+						KeyCount: 14
+						Key: 
+							0,-25.034808478027657,L,
+							1924423250,-22.277877751636840,L,
+							5773269750,-7.791740640035012,L,
+							7697693000,-5.034811194304666,L,
+							9622116250,-7.242426944905757,L,
+							11546539500,-13.498922059537113,L,
+							13470962750,-21.566177162764411,L,
+							15395386000,-27.826772952218708,L,
+							17319809250,-30.034807478793287,L,
+							19244232500,-29.588874673167549,L,
+							21168655750,-28.337251045500974,L,
+							23093079000,-26.730549788548039,L,
+							25017502250,-25.479112283536345,L,
+							26941925500,-25.034808478027657,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -0.000004489158436
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000004489158436,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.999999940395355
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999940395355,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.999999880790710
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999880790710,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::Head" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.503173947334290
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.503173947334290,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.000000037988578
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000037988578,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000000000000,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: -0.000002432592644
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000002432592644,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 22.035491413466360
+						KeyVer: 4005
+						KeyCount: 10
+						Key: 
+							0,22.035491413466360,L,
+							1924423250,18.595492251203769,L,
+							5773269750,0.475490769424042,L,
+							7697693000,-2.964508926447079,L,
+							9622116250,-0.755486156876967,L,
+							11546539500,5.502687263299507,L,
+							13470962750,13.568305682446942,L,
+							15395386000,19.826475047198596,L,
+							17319809250,22.035487998371774,L,
+							26941925500,22.035491413466360,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -0.000003842524087
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000003842524087,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 0.999999880790710
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999880790710,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::UpperWing_r" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.361815989017487
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.361815989017487,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -0.416100293397903
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.416100293397903,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.010489914566278
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.010489914566278,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: 9.023826511580795
+						KeyVer: 4005
+						KeyCount: 15
+						Key: 
+							0,9.023826511580795,L,
+							1924423250,10.722113775114297,L,
+							3848846500,14.662329525204870,L,
+							5773269750,17.475025331074175,L,
+							7697693000,17.240351984023921,L,
+							9622116250,14.816177828711893,L,
+							11546539500,13.053642390750758,L,
+							13470962750,14.365730268044786,L,
+							15395386000,17.715492386087885,L,
+							17319809250,19.499462665211780,L,
+							19244232500,16.423514293257639,L,
+							21168655750,10.241058429229113,L,
+							23093079000,7.235835812356704,L,
+							25017502250,8.124501479982031,L,
+							26941925500,9.023826511580795,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 9.330118660946759
+						KeyVer: 4005
+						KeyCount: 15
+						Key: 
+							0,9.330118660946759,L,
+							1924423250,12.096917303140938,L,
+							3848846500,19.788198667089901,L,
+							5773269750,28.212268828973674,L,
+							7697693000,32.280406338255588,L,
+							9622116250,27.248383995566400,L,
+							11546539500,9.815050139185921,L,
+							13470962750,-13.779706013674057,L,
+							15395386000,-31.362753347792768,L,
+							17319809250,-37.207899465887053,L,
+							19244232500,-33.873988509360238,L,
+							21168655750,-22.885178899045773,L,
+							23093079000,-6.963657896573965,L,
+							25017502250,5.258370542914855,L,
+							26941925500,9.330118660946759,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -71.637797071793827
+						KeyVer: 4005
+						KeyCount: 15
+						Key: 
+							0,-71.637797071793827,L,
+							1924423250,-73.853387495137724,L,
+							3848846500,-80.017141447445127,L,
+							5773269750,-87.652691882861447,L,
+							7697693000,-94.169108992583631,L,
+							9622116250,-101.084108621510495,L,
+							11546539500,-109.299849475972707,L,
+							13470962750,-117.082856865380236,L,
+							15395386000,-123.409046376528650,L,
+							17319809250,-125.975216749590459,L,
+							19244232500,-120.067881759103287,L,
+							21168655750,-104.945077955529754,L,
+							23093079000,-88.025490437949387,L,
+							25017502250,-75.870342357039590,L,
+							26941925500,-71.637797071793827,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 0.999999761581421
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999761581421,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.999999880790710
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999880790710,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.999999880790710
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999880790710,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::LowerWing_r" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 1.243294358253479
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.243294358253479,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -0.000000013038516
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000000013038516,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.000000002328306
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000002328306,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: 1.368341528741583
+						KeyVer: 4005
+						KeyCount: 12
+						Key: 
+							0,1.368341528741583,L,
+							7697693000,1.368340354802819,L,
+							9622116250,1.333801475552289,L,
+							11546539500,1.234721257348346,L,
+							13470962750,1.103985353497260,L,
+							15395386000,0.999785374901870,L,
+							17319809250,0.962361167613837,L,
+							19244232500,0.999790390822042,L,
+							21168655750,1.103985246775554,L,
+							23093079000,1.234721684235169,L,
+							25017502250,1.333801475552289,L,
+							26941925500,1.368341528741583,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -2.217442471826021
+						KeyVer: 4005
+						KeyCount: 12
+						Key: 
+							0,-2.217442471826021,L,
+							7697693000,-2.217443325599668,L,
+							9622116250,-2.238383191491016,L,
+							11546539500,-2.294504721466814,L,
+							13470962750,-2.360165891278991,L,
+							15395386000,-2.406135839157461,L,
+							17319809250,-2.421341120910357,L,
+							19244232500,-2.406133918166757,L,
+							21168655750,-2.360165891278991,L,
+							23093079000,-2.294505575240461,L,
+							25017502250,-2.238382337717369,L,
+							26941925500,-2.217442471826021,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -57.369654839062754
+						KeyVer: 4005
+						KeyCount: 12
+						Key: 
+							0,-57.369654839062754,L,
+							7697693000,-57.369648008873583,L,
+							9622116250,-56.481187246923355,L,
+							11546539500,-53.976198293351850,L,
+							13470962750,-50.757611665865952,L,
+							15395386000,-48.252206070755079,L,
+							17319809250,-47.363506252183903,L,
+							19244232500,-48.252212900944251,L,
+							21168655750,-50.757608250771369,L,
+							23093079000,-53.976198293351850,L,
+							25017502250,-56.481183831828766,L,
+							26941925500,-57.369654839062754,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 1.000000119209290
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000119209290,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::UpperWing_l" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.361815929412842
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.361815929412842,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.416100353002548
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.416100353002548,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.010490038432181
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.010490038432181,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: -9.023823950259855
+						KeyVer: 4005
+						KeyCount: 15
+						Key: 
+							0,-9.023823950259855,L,
+							1924423250,-10.722110360019713,L,
+							3848846500,-14.662329525204870,L,
+							5773269750,-17.475030453716052,L,
+							7697693000,-17.240360521760383,L,
+							9622116250,-14.816186366448356,L,
+							11546539500,-13.053651782260868,L,
+							13470962750,-14.365737098233955,L,
+							15395386000,-17.715500923824347,L,
+							17319809250,-19.499478033137414,L,
+							19244232500,-16.423521123446807,L,
+							21168655750,-10.241058429229113,L,
+							23093079000,-7.235833251035765,L,
+							25017502250,-8.124498918661093,L,
+							26941925500,-9.023823950259855,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 9.330099877926543
+						KeyVer: 4005
+						KeyCount: 15
+						Key: 
+							0,9.330099877926543,L,
+							1924423250,12.096897666347074,L,
+							3848846500,19.788179884069681,L,
+							5773269750,28.212251753500748,L,
+							7697693000,32.280389262782663,L,
+							9622116250,27.248368627640765,L,
+							11546539500,9.815028794844764,L,
+							13470962750,-13.779729919336152,L,
+							15395386000,-31.362770423265694,L,
+							17319809250,-37.207930201738314,L,
+							19244232500,-33.874012415022335,L,
+							21168655750,-22.885199389613284,L,
+							23093079000,-6.963681375349236,L,
+							25017502250,5.258352186781461,L,
+							26941925500,9.330099877926543,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 71.637797071793827
+						KeyVer: 4005
+						KeyCount: 15
+						Key: 
+							0,71.637797071793827,L,
+							1924423250,73.853387495137724,L,
+							3848846500,80.017141447445127,L,
+							5773269750,87.652691882861447,L,
+							7697693000,94.169108992583631,L,
+							9622116250,101.084108621510495,L,
+							11546539500,109.299856306161885,L,
+							13470962750,117.082870525758565,L,
+							15395386000,123.409060036906993,L,
+							17319809250,125.975230409968788,L,
+							19244232500,120.067895419481630,L,
+							21168655750,104.945077955529754,L,
+							23093079000,88.025490437949387,L,
+							25017502250,75.870342357039590,L,
+							26941925500,71.637797071793827,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 0.999999821186066
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999821186066,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.999999821186066
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999821186066,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.999999821186066
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999821186066,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::LowerWing_l" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 1.243294358253479
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.243294358253479,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.000000080093741
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000080093741,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -0.000000015366822
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000000015366822,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: -1.368340141359407
+						KeyVer: 4005
+						KeyCount: 12
+						Key: 
+							0,-1.368340141359407,L,
+							7697693000,-1.368340461524525,L,
+							9622116250,-1.333804783925168,L,
+							11546539500,-1.234721470791757,L,
+							13470962750,-1.103986740879435,L,
+							15395386000,-0.999784734571636,L,
+							17319809250,-0.962364902873540,L,
+							19244232500,-0.999784948015047,L,
+							21168655750,-1.103986207270906,L,
+							23093079000,-1.234720510296405,L,
+							25017502250,-1.333800941943760,L,
+							26941925500,-1.368340141359407,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -2.217442898712845
+						KeyVer: 4005
+						KeyCount: 12
+						Key: 
+							0,-2.217442898712845,L,
+							7697693000,-2.217443325599668,L,
+							9622116250,-2.238384685594897,L,
+							11546539500,-2.294506429014107,L,
+							13470962750,-2.360166104722403,L,
+							15395386000,-2.406130503072172,L,
+							17319809250,-2.421343682231296,L,
+							19244232500,-2.406133704723346,L,
+							21168655750,-2.360165891278991,L,
+							23093079000,-2.294505575240461,L,
+							25017502250,-2.238382551160781,L,
+							26941925500,-2.217442898712845,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 57.369654839062754
+						KeyVer: 4005
+						KeyCount: 12
+						Key: 
+							0,57.369654839062754,L,
+							7697693000,57.369648008873583,L,
+							9622116250,56.481180416734183,L,
+							11546539500,53.976191463162685,L,
+							13470962750,50.757608250771369,L,
+							15395386000,48.252206070755079,L,
+							17319809250,47.363509667278485,L,
+							19244232500,48.252212900944251,L,
+							21168655750,50.757608250771369,L,
+							23093079000,53.976198293351850,L,
+							25017502250,56.481187246923355,L,
+							26941925500,57.369654839062754,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 0.999999940395355
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999940395355,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.999999821186066
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999821186066,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::UpperLeg_r" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.089774414896965
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.089774414896965,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -0.210822522640228
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.210822522640228,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -0.192020088434219
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.192020088434219,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: -0.556764097492406
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.556764097492406,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 25.784829843238384
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,25.784829843238384,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -175.759564024771436
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-175.759564024771436,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 0.999999761581421
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999761581421,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 1.000000238418579
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000238418579,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 1.000000238418579
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000238418579,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::LowerLeg_r" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.354144394397736
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.354144394397736,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.000000028341809
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000028341809,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -0.000000000931323
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000000000931323,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: 0.262357704581862
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.262357704581862,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -18.601931412043790
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-18.601931412043790,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -0.479251215448952
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.479251215448952,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 0.999999821186066
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999821186066,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 1.000000119209290
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000119209290,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 1.000000119209290
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000119209290,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::Talon_r" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.343979477882385
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.343979477882385,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.000000002324368
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000002324368,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -0.000000026077032
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000000026077032,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: 5.039398093219146
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,5.039398093219146,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 19.134636648432537
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,19.134636648432537,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -18.556718974832954
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-18.556718974832954,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.999999821186066
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999821186066,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::UpperLeg_l" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.089774392545223
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.089774392545223,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.210822492837906
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.210822492837906,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -0.192020162940025
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.192020162940025,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: 0.556774236054455
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.556774236054455,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 25.784836673427556
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,25.784836673427556,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 175.759577685149765
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,175.759577685149765,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 0.999999880790710
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999880790710,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.999999940395355
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999940395355,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.999999940395355
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999940395355,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::LowerLeg_l" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.354144394397736
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.354144394397736,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.000000032765268
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000032765268,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -0.000000003725290
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000000003725290,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: -0.262351568083780
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.262351568083780,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -18.601934827138376
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-18.601934827138376,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.479251909140039
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.479251909140039,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 1.000000119209290
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000119209290,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 1.000000119209290
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000119209290,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::Talon_l" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.343979477882385
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.343979477882385,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.000000049175092
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000049175092,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.000000015832484
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000015832484,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: -5.039403215861023
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-5.039403215861023,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 19.134640063527122
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,19.134640063527122,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 18.556717267285663
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,18.556717267285663,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 1.000000238418579
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000238418579,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::Tail" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: -0.755466699600220
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.755466699600220,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -0.000000011435624
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000000011435624,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.301998615264893
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.301998615264893,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: -0.000003730367042
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000003730367042,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -13.450834112685708
+						KeyVer: 4005
+						KeyCount: 10
+						Key: 
+							0,-13.450834112685708,L,
+							1924423250,-11.380260558252026,L,
+							5773269750,-0.521400419538745,L,
+							7697693000,1.549172601286409,L,
+							9622116250,0.218691718248651,L,
+							11546539500,-3.536664054821293,L,
+							13470962750,-8.365000124620652,L,
+							15395386000,-12.120352535956863,L,
+							17319809250,-13.450834112685708,L,
+							26941925500,-13.450834112685708,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 179.999991348319355
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,179.999991348319355,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 0.999999701976776
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999701976776,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::Bird" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000000000000,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000000000000,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000000000000,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: -90.000002504348856
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-90.000002504348856,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -0.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000000000000000,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000000000000,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+	}
+	Take: "Idle_Air" {
+		FileName: "Idle_Air.tak"
+		LocalTime: 0,26941925500
+		ReferenceTime: 0,26941925500
+
+		;Models animation
+		;----------------------------------------------------
+		Model: "Model::Pelvis" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: -0.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000000000000000,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.107853651046753
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.107853651046753,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.000000000116415
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000000116415,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: 0.000011743926109
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000011743926109,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -26.388031169598026
+						KeyVer: 4005
+						KeyCount: 12
+						Key: 
+							0,-26.388031169598026,L,
+							7697693000,-26.388031169598026,L,
+							9622116250,-26.832369126052566,L,
+							11546539500,-28.084223272603630,L,
+							13470962750,-29.691829529621590,L,
+							15395386000,-30.943693921456408,L,
+							17319809250,-31.388031877910947,L,
+							19244232500,-30.943690506361822,L,
+							21168655750,-29.691829529621590,L,
+							23093079000,-28.084223272603630,L,
+							25017502250,-26.832369126052566,L,
+							26941925500,-26.388031169598026,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -90.000009334538021
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-90.000009334538021,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 1.000000238418579
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000238418579,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.999999940395355
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999940395355,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::Chest" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.326203167438507
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.326203167438507,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.000000024627655
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000024627655,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.000000000000002
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000000000002,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: -0.000021542797998
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000021542797998,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 27.565077669264632
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,27.565077669264632,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -0.000007595923434
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000007595923434,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 0.999999821186066
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999821186066,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.999999940395355
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999940395355,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.999999821186066
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999821186066,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::Neck" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.530363380908966
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.530363380908966,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.000000040041321
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000040041321,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.000000020489088
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000020489088,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: 0.000016492680502
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000016492680502,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -0.034809422109739
+						KeyVer: 4005
+						KeyCount: 10
+						Key: 
+							0,-0.034809422109739,L,
+							1924423250,-1.416563091168626,L,
+							5773269750,-8.653061645318232,L,
+							7697693000,-10.034810621957119,L,
+							9622116250,-9.146769916640848,L,
+							11546539500,-6.643110288636557,L,
+							13470962750,-3.426507617661132,L,
+							15395386000,-0.922855353454541,L,
+							17319809250,-0.034813050647735,L,
+							26941925500,-0.034809422109739,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.000003650993832
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000003650993832,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 0.999999821186066
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999821186066,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.999999940395355
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999940395355,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.999999940395355
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999940395355,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::Head" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.503173947334290
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.503173947334290,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.000000037988574
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000037988574,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -0.000000003725278
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000000003725278,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: -0.000004055543289
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000004055543289,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 37.035495245952418
+						KeyVer: 4005
+						KeyCount: 10
+						Key: 
+							0,37.035495245952418,L,
+							1924423250,38.417242515044016,L,
+							5773269750,45.653735733108334,L,
+							7697693000,47.035496662578268,L,
+							9622116250,46.147442296883654,L,
+							11546539500,43.643792060389472,L,
+							13470962750,40.427186187762878,L,
+							15395386000,37.923529121079525,L,
+							17319809250,37.035488415763254,L,
+							26941925500,37.035495245952418,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -0.000004815882518
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000004815882518,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 0.999999880790710
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999880790710,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.999999940395355
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999940395355,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.999999880790710
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999880790710,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::UpperWing_r" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.361816048622131
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.361816048622131,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -0.416100293397903
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.416100293397903,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.010489921085536
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.010489921085536,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: -3.489650795547105
+						KeyVer: 4005
+						KeyCount: 15
+						Key: 
+							0,-3.489650795547105,L,
+							1924423250,2.425762387737465,L,
+							3848846500,17.854747990433196,L,
+							5773269750,34.393441471211887,L,
+							7697693000,41.294657778393685,L,
+							9622116250,40.092609371270278,L,
+							11546539500,35.624565993631990,L,
+							13470962750,27.267120912007009,L,
+							15395386000,17.439685932308581,L,
+							17319809250,10.099010985060561,L,
+							19244232500,5.133882661328736,L,
+							21168655750,1.109740641646634,L,
+							23093079000,-1.641729988832999,L,
+							25017502250,-3.085711273599016,L,
+							26941925500,-3.489650795547105,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -18.479780308927456
+						KeyVer: 4005
+						KeyCount: 15
+						Key: 
+							0,-18.479780308927456,L,
+							1924423250,-12.365053454482327,L,
+							3848846500,4.551165072289935,L,
+							5773269750,20.770246681047507,L,
+							7697693000,26.235610375627534,L,
+							9622116250,22.596586331140227,L,
+							11546539500,12.090467043243516,L,
+							13470962750,-1.390778593443336,L,
+							15395386000,-11.624809505068457,L,
+							17319809250,-16.418000623050151,L,
+							19244232500,-18.091992903705954,L,
+							21168655750,-18.685976889780676,L,
+							23093079000,-18.724584534064117,L,
+							25017502250,-18.575090476152969,L,
+							26941925500,-18.479780308927456,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -90.064513641059534
+						KeyVer: 4005
+						KeyCount: 15
+						Key: 
+							0,-90.064513641059534,L,
+							1924423250,-91.184043117725537,L,
+							3848846500,-90.990045254729949,L,
+							5773269750,-86.040890182145816,L,
+							7697693000,-82.825653762447814,L,
+							9622116250,-80.737166329368506,L,
+							11546539500,-74.594825020109042,L,
+							13470962750,-65.680335322988014,L,
+							15395386000,-57.532998813063372,L,
+							17319809250,-54.206741083501548,L,
+							19244232500,-57.162887937413835,L,
+							21168655750,-66.010581799546827,L,
+							23093079000,-77.692431921921269,L,
+							25017502250,-86.834605975024346,L,
+							26941925500,-90.064513641059534,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 0.999999880790710
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999880790710,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::LowerWing_r" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 1.243294358253479
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.243294358253479,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.000000093132257
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000093132257,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -0.000000070780516
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000000070780516,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: 1.368339714472584
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.368339714472584,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -2.217442044939198
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-2.217442044939198,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -57.369654839062754
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-57.369654839062754,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.999999940395355
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999940395355,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::UpperWing_l" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.361815959215164
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.361815959215164,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.416100353002548
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.416100353002548,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.010490044951439
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.010490044951439,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: 3.489652929981221
+						KeyVer: 4005
+						KeyCount: 15
+						Key: 
+							0,3.489652929981221,L,
+							1924423250,-2.425761107076995,L,
+							3848846500,-17.854747990433196,L,
+							5773269750,-34.393438056117297,L,
+							7697693000,-41.294657778393685,L,
+							9622116250,-40.092605956175696,L,
+							11546539500,-35.624552333253646,L,
+							13470962750,-27.267112374270546,L,
+							15395386000,-17.439677394572119,L,
+							17319809250,-10.099001593550453,L,
+							19244232500,-5.133873696705449,L,
+							21168655750,-1.109731143414819,L,
+							23093079000,1.641732977040761,L,
+							25017502250,3.085716182797482,L,
+							26941925500,3.489652929981221,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -18.479797384400381
+						KeyVer: 4005
+						KeyCount: 15
+						Key: 
+							0,-18.479797384400381,L,
+							1924423250,-12.365072237502545,L,
+							3848846500,4.551147569930187,L,
+							5773269750,20.770229605574581,L,
+							7697693000,26.235595007701900,L,
+							9622116250,22.596565840572715,L,
+							11546539500,12.090443137581421,L,
+							13470962750,-1.390798977289141,L,
+							15395386000,-11.624826580541381,L,
+							17319809250,-16.418021113617662,L,
+							19244232500,-18.092009979178879,L,
+							21168655750,-18.685997380348187,L,
+							23093079000,-18.724603317084334,L,
+							25017502250,-18.575114381815066,L,
+							26941925500,-18.479797384400381,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 90.064513641059534
+						KeyVer: 4005
+						KeyCount: 15
+						Key: 
+							0,90.064513641059534,L,
+							1924423250,91.184043117725537,L,
+							3848846500,90.990045254729949,L,
+							5773269750,86.040890182145816,L,
+							7697693000,82.825653762447814,L,
+							9622116250,80.737173159557670,L,
+							11546539500,74.594831850298220,L,
+							13470962750,65.680348983366358,L,
+							15395386000,57.532991982874201,L,
+							17319809250,54.206727423123205,L,
+							19244232500,57.162894767603007,L,
+							21168655750,66.010574969357663,L,
+							23093079000,77.692431921921269,L,
+							25017502250,86.834605975024346,L,
+							26941925500,90.064513641059534,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 0.999999880790710
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999880790710,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::LowerWing_l" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 1.243294477462769
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.243294477462769,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.000000044703484
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000044703484,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -0.000000081956387
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000000081956387,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: -1.368339394307467
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-1.368339394307467,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -2.217442898712845
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-2.217442898712845,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 57.369654839062754
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,57.369654839062754,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 0.999999880790710
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999880790710,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.999999880790710
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999880790710,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::UpperLeg_r" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.105793870985508
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.105793870985508,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -0.209405034780502
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.209405034780502,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -0.210433185100555
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.210433185100555,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: -179.020583202475962
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-179.020583202475962,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 59.210431801513565
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,59.210431801513565,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 5.324016771688223
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,5.324016771688223,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 1.000000119209290
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000119209290,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.999999761581421
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999761581421,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::LowerLeg_r" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.354144364595413
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.354144364595413,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.000000037252903
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000037252903,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -0.000000010244548
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000000010244548,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: -3.951412991461147
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-3.951412991461147,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -93.610679556233350
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-93.610679556233350,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 3.548037600449817
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,3.548037600449817,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 1.000000238418579
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000238418579,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 1.000000238418579
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000238418579,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.999999940395355
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999940395355,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::Talon_r" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.343979507684708
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.343979507684708,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.000000041909516
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000041909516,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -0.000000068917871
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000000068917871,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: 7.505404595876502
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,7.505404595876502,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -50.554857500354416
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-50.554857500354416,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -26.021699096106797
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-26.021699096106797,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 1.000000119209290
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000119209290,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.999999880790710
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999880790710,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::UpperLeg_l" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.105793848633766
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.105793848633766,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.209405034780502
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.209405034780502,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -0.210433214902878
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.210433214902878,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: 179.020569542097633
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,179.020569542097633,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 59.210424971324393
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,59.210424971324393,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -5.324013783480461
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-5.324013783480461,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.999999821186066
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999821186066,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.999999761581421
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999761581421,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::LowerLeg_l" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.354144334793091
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.354144334793091,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.000000017695129
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000017695129,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.000000020489097
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000020489097,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: 3.951273399469985
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,3.951273399469985,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -93.610679556233350
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-93.610679556233350,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: -3.547884988410550
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-3.547884988410550,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.999999880790710
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999880790710,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::Talon_l" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.343979507684708
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.343979507684708,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.000000033527613
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000033527613,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.000000005587935
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000005587935,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: -7.505390935498163
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-7.505390935498163,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -50.554871160732759
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-50.554871160732759,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 26.021699096106797
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,26.021699096106797,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 0.999999880790710
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999880790710,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.999999821186066
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999821186066,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::Tail" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: -0.755466639995575
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.755466639995575,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -0.000000011435626
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000000011435626,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.301998555660248
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.301998555660248,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: -0.000012900195441
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000012900195441,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 51.549179364250520
+						KeyVer: 4005
+						KeyCount: 10
+						Key: 
+							0,51.549179364250520,L,
+							1924423250,50.167408189496832,L,
+							5773269750,42.930925216716268,L,
+							7697693000,41.549181362719260,L,
+							17319809250,41.549181362719260,L,
+							19244232500,42.437232313319285,L,
+							21168655750,44.940879134718884,L,
+							23093079000,48.157474762061725,L,
+							25017502250,50.661118168366734,L,
+							26941925500,51.549179364250520,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 179.999991348319355
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,179.999991348319355,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 0.999999821186066
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999821186066,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.999999880790710
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999880790710,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.999999761581421
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.999999761581421,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+		Model: "Model::Bird" {
+			Version: 1.1
+			Channel: "Transform" {
+				Channel: "T" {
+					Channel: "X" {
+						Default: 0.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000000000000,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 0.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000000000000,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000000000000,L
+						Color: 0,0,1
+					}
+					LayerType: 1
+				}
+				Channel: "R" {
+					Channel: "X" {
+						Default: -90.000002504348856
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-90.000002504348856,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: -0.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,-0.000000000000000,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 0.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,0.000000000000000,L
+						Color: 0,0,1
+					}
+					LayerType: 2
+				}
+				Channel: "S" {
+					Channel: "X" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 1,0,0
+					}
+					Channel: "Y" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,1,0
+					}
+					Channel: "Z" {
+						Default: 1.000000000000000
+						KeyVer: 4005
+						KeyCount: 1
+						Key: 
+							1924423250,1.000000000000000,L
+						Color: 0,0,1
+					}
+					LayerType: 3
+				}
+			}
+		}
+	}
+	Take: "Neutral" {
+		FileName: "Neutral.tak"
+		LocalTime: 0,7697693000
+		ReferenceTime: 0,7697693000
 
 		;Models animation
 		;----------------------------------------------------
@@ -4955,7 +11171,7 @@ Version5:  {
 		SnapOnFrames: 0
 		ReferenceTimeIndex: -1
 		TimeLineStartTime: 0
-		TimeLineStopTime: 479181389250
+		TimeLineStopTime: 26941925500
 	}
 	RendererSetting:  {
 		DefaultCamera: "Producer Perspective"

@@ -43,6 +43,10 @@ ModelImporter:
     400034: UpperWing_r
     4300000: BirdMesh
     7400000: Default Take
+    7400002: Dive
+    7400004: Fly
+    7400006: Idle_Air
+    7400008: Neutral
     9500000: //RootNode
     13700000: BirdMesh
   materials:
@@ -64,7 +68,317 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Default Take
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 14
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bird
+        weight: 1
+      - path: Bird/Pelvis
+        weight: 1
+      - path: Bird/Pelvis/Chest
+        weight: 1
+      - path: Bird/Pelvis/Chest/Neck
+        weight: 1
+      - path: Bird/Pelvis/Chest/Neck/Head
+        weight: 1
+      - path: Bird/Pelvis/Chest/UpperWing_l
+        weight: 1
+      - path: Bird/Pelvis/Chest/UpperWing_l/LowerWing_l
+        weight: 1
+      - path: Bird/Pelvis/Chest/UpperWing_r
+        weight: 1
+      - path: Bird/Pelvis/Chest/UpperWing_r/LowerWing_r
+        weight: 1
+      - path: Bird/Pelvis/Tail
+        weight: 1
+      - path: Bird/Pelvis/UpperLeg_l
+        weight: 1
+      - path: Bird/Pelvis/UpperLeg_l/LowerLeg_l
+        weight: 1
+      - path: Bird/Pelvis/UpperLeg_l/LowerLeg_l/Talon_l
+        weight: 1
+      - path: Bird/Pelvis/UpperLeg_r
+        weight: 1
+      - path: Bird/Pelvis/UpperLeg_r/LowerLeg_r
+        weight: 1
+      - path: Bird/Pelvis/UpperLeg_r/LowerLeg_r/Talon_r
+        weight: 1
+      - path: BirdMesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Dive
+      takeName: Dive
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bird
+        weight: 1
+      - path: Bird/Pelvis
+        weight: 1
+      - path: Bird/Pelvis/Chest
+        weight: 1
+      - path: Bird/Pelvis/Chest/Neck
+        weight: 1
+      - path: Bird/Pelvis/Chest/Neck/Head
+        weight: 1
+      - path: Bird/Pelvis/Chest/UpperWing_l
+        weight: 1
+      - path: Bird/Pelvis/Chest/UpperWing_l/LowerWing_l
+        weight: 1
+      - path: Bird/Pelvis/Chest/UpperWing_r
+        weight: 1
+      - path: Bird/Pelvis/Chest/UpperWing_r/LowerWing_r
+        weight: 1
+      - path: Bird/Pelvis/Tail
+        weight: 1
+      - path: Bird/Pelvis/UpperLeg_l
+        weight: 1
+      - path: Bird/Pelvis/UpperLeg_l/LowerLeg_l
+        weight: 1
+      - path: Bird/Pelvis/UpperLeg_l/LowerLeg_l/Talon_l
+        weight: 1
+      - path: Bird/Pelvis/UpperLeg_r
+        weight: 1
+      - path: Bird/Pelvis/UpperLeg_r/LowerLeg_r
+        weight: 1
+      - path: Bird/Pelvis/UpperLeg_r/LowerLeg_r/Talon_r
+        weight: 1
+      - path: BirdMesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Fly
+      takeName: Fly
+      firstFrame: 0
+      lastFrame: 14
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bird
+        weight: 1
+      - path: Bird/Pelvis
+        weight: 1
+      - path: Bird/Pelvis/Chest
+        weight: 1
+      - path: Bird/Pelvis/Chest/Neck
+        weight: 1
+      - path: Bird/Pelvis/Chest/Neck/Head
+        weight: 1
+      - path: Bird/Pelvis/Chest/UpperWing_l
+        weight: 1
+      - path: Bird/Pelvis/Chest/UpperWing_l/LowerWing_l
+        weight: 1
+      - path: Bird/Pelvis/Chest/UpperWing_r
+        weight: 1
+      - path: Bird/Pelvis/Chest/UpperWing_r/LowerWing_r
+        weight: 1
+      - path: Bird/Pelvis/Tail
+        weight: 1
+      - path: Bird/Pelvis/UpperLeg_l
+        weight: 1
+      - path: Bird/Pelvis/UpperLeg_l/LowerLeg_l
+        weight: 1
+      - path: Bird/Pelvis/UpperLeg_l/LowerLeg_l/Talon_l
+        weight: 1
+      - path: Bird/Pelvis/UpperLeg_r
+        weight: 1
+      - path: Bird/Pelvis/UpperLeg_r/LowerLeg_r
+        weight: 1
+      - path: Bird/Pelvis/UpperLeg_r/LowerLeg_r/Talon_r
+        weight: 1
+      - path: BirdMesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Idle_Air
+      takeName: Idle_Air
+      firstFrame: 0
+      lastFrame: 14
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bird
+        weight: 1
+      - path: Bird/Pelvis
+        weight: 1
+      - path: Bird/Pelvis/Chest
+        weight: 1
+      - path: Bird/Pelvis/Chest/Neck
+        weight: 1
+      - path: Bird/Pelvis/Chest/Neck/Head
+        weight: 1
+      - path: Bird/Pelvis/Chest/UpperWing_l
+        weight: 1
+      - path: Bird/Pelvis/Chest/UpperWing_l/LowerWing_l
+        weight: 1
+      - path: Bird/Pelvis/Chest/UpperWing_r
+        weight: 1
+      - path: Bird/Pelvis/Chest/UpperWing_r/LowerWing_r
+        weight: 1
+      - path: Bird/Pelvis/Tail
+        weight: 1
+      - path: Bird/Pelvis/UpperLeg_l
+        weight: 1
+      - path: Bird/Pelvis/UpperLeg_l/LowerLeg_l
+        weight: 1
+      - path: Bird/Pelvis/UpperLeg_l/LowerLeg_l/Talon_l
+        weight: 1
+      - path: Bird/Pelvis/UpperLeg_r
+        weight: 1
+      - path: Bird/Pelvis/UpperLeg_r/LowerLeg_r
+        weight: 1
+      - path: Bird/Pelvis/UpperLeg_r/LowerLeg_r/Talon_r
+        weight: 1
+      - path: BirdMesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Neutral
+      takeName: Neutral
+      firstFrame: 0
+      lastFrame: 4
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bird
+        weight: 1
+      - path: Bird/Pelvis
+        weight: 1
+      - path: Bird/Pelvis/Chest
+        weight: 1
+      - path: Bird/Pelvis/Chest/Neck
+        weight: 1
+      - path: Bird/Pelvis/Chest/Neck/Head
+        weight: 1
+      - path: Bird/Pelvis/Chest/UpperWing_l
+        weight: 1
+      - path: Bird/Pelvis/Chest/UpperWing_l/LowerWing_l
+        weight: 1
+      - path: Bird/Pelvis/Chest/UpperWing_r
+        weight: 1
+      - path: Bird/Pelvis/Chest/UpperWing_r/LowerWing_r
+        weight: 1
+      - path: Bird/Pelvis/Tail
+        weight: 1
+      - path: Bird/Pelvis/UpperLeg_l
+        weight: 1
+      - path: Bird/Pelvis/UpperLeg_l/LowerLeg_l
+        weight: 1
+      - path: Bird/Pelvis/UpperLeg_l/LowerLeg_l/Talon_l
+        weight: 1
+      - path: Bird/Pelvis/UpperLeg_r
+        weight: 1
+      - path: Bird/Pelvis/UpperLeg_r/LowerLeg_r
+        weight: 1
+      - path: Bird/Pelvis/UpperLeg_r/LowerLeg_r/Talon_r
+        weight: 1
+      - path: BirdMesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []

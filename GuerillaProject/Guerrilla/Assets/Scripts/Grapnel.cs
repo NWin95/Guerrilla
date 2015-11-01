@@ -17,6 +17,7 @@ public class Grapnel : MonoBehaviour {
     public float turnTime;
     bool grapnel;
     Vector3 toGrapnel;
+    public float grapnelRange;
 
     //Vector3 rigVelCus;
     //Vector3 posA;
@@ -83,7 +84,7 @@ public class Grapnel : MonoBehaviour {
 
         Vector3 lookVec = Vector3.zero;
         if (swinging)
-            lookVec = rig.velocity + (transform.forward * 0.0001f);
+            lookVec = rig.velocity + (transform.forward * 0.0001f) + (toGrapnel * 0.0001f);
         else if (thrownBool)
             lookVec = toGrapnel + (Vector3.up * 0.0001f);
         else
@@ -133,6 +134,10 @@ public class Grapnel : MonoBehaviour {
         grapnelTrans.GetComponent<Rigidbody>().velocity = (throwDirection.normalized * throwSpeed) + rig.velocity;
 
         thrownBool = true;
+
+        SpringJoint sj = grapnelObj.GetComponent<SpringJoint>();
+        sj.connectedBody = rig;
+        sj.maxDistance = grapnelRange;
     }
 
     void GrapnelCast () //  Test space in rope line
