@@ -72,7 +72,7 @@ public class Player_MovementHuman : MonoBehaviour {
         if (inputMag > 0.1f)
         {
             Vector3 lookVec = camParent.forward;
-            lookVec.y = 0;
+            lookVec.y = 0.00001f;
             lookVec = lookVec.normalized;
 
             Quaternion lookRot = Quaternion.LookRotation(lookVec);

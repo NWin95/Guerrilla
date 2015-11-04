@@ -18,6 +18,10 @@ public class Grapnel : MonoBehaviour {
     bool grapnel;
     Vector3 toGrapnel;
     public float grapnelRange;
+    SpringJoint sj;
+    public float grapnelRetractSpeed;
+    //bool grapnelRig;
+    float rangeHold;
 
     //Vector3 rigVelCus;
     //Vector3 posA;
@@ -59,12 +63,25 @@ public class Grapnel : MonoBehaviour {
         animator.SetBool("GrapnelThrow", thrownBool);
     }
 
-    /*
+    
     void FixedUpdate ()
     {
-        RigVelCusFunc();
-        LookAtVel();
-    }   */
+        GrapnelRetract();
+        //RigVelCusFunc();
+        //LookAtVel();
+    }   
+
+    void GrapnelRetract ()
+    {
+        if (swinging)
+        {
+            float pull = -Input.GetAxis("GrapnelRetract");
+            //Debug.Log(pull);
+
+            sj.maxDistance += pull * grapnelRetractSpeed * Time.fixedDeltaTime;
+        }
+    }
+
     /*
     void RigVelCusFunc ()
     {
@@ -165,7 +182,7 @@ public class Grapnel : MonoBehaviour {
     {
         swinging = true;
 
-        SpringJoint sj = gameObject.AddComponent<SpringJoint>();
+        sj = gameObject.AddComponent<SpringJoint>();
         sj.autoConfigureConnectedAnchor = false;
         
         //          Mathf.Infinity bugs with high force / velocity
@@ -183,10 +200,12 @@ public class Grapnel : MonoBehaviour {
         {
             sj.connectedBody = rig;
             sj.connectedAnchor = hit.transform.InverseTransformPoint(hit.point);
+            //grapnelRig = true;
         }
         else
         {
             sj.connectedAnchor = hit.point;
+            //grapnelRig = false;
         }
         GrapnelDestroy();
     }

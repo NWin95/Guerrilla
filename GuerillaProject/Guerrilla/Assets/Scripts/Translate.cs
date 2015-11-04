@@ -17,6 +17,6 @@ public class Translate : MonoBehaviour {
     {
         Vector3 pos = transform.position;
         rig.MovePosition(pos + (moveVec * speed * Time.fixedDeltaTime));
-        Debug.Log(rig.velocity);
-    }   */
+//        Debug.Log(rig.velocity);
+    } */  
 }
