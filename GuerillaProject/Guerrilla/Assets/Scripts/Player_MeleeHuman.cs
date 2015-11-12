@@ -8,9 +8,11 @@ public class Player_MeleeHuman : MonoBehaviour {
     public float counterRange;
     public bool canCounter;
     public Animator animator;
+    Vector3 relPos;
+    Rigidbody rig;
 
 	void Start () {
-	
+        rig = GetComponent<Rigidbody>();
 	}
 	
 	void Update () {
@@ -22,8 +24,6 @@ public class Player_MeleeHuman : MonoBehaviour {
 
     void CounterCheck ()
     {
-        Debug.Log("CounterCheck");
-
         Vector3 pos = transform.position;
         float dis = counterRange + 0.25f;
         Collider[] colliders = Physics.OverlapSphere(transform.position, counterRange, counterMask);
@@ -40,7 +40,6 @@ public class Player_MeleeHuman : MonoBehaviour {
             }
         }
 
-        Debug.Log(aggressor.name);
         if (aggressor != null)
         {
             StartCoroutine (Counter());
@@ -50,12 +49,11 @@ public class Player_MeleeHuman : MonoBehaviour {
     IEnumerator Counter ()
     {
         canCounter = false;
-        Vector3 lookVec = aggressor.position - transform.position;
-        Quaternion lookRot = Quaternion.LookRotation(lookVec);
-        transform.rotation = lookRot;
+
+        StartCoroutine(MoveTo());
 
         animator.SetInteger("AttackInt", 1);
-        animator.SetBool("Countering", true);
+        animator.SetTrigger("CounterTrigger");
 
         StartCoroutine (aggressor.GetComponent<EnemyAttack>().Countered());
         float time = 0.5f;
@@ -63,7 +61,21 @@ public class Player_MeleeHuman : MonoBehaviour {
         yield return new WaitForSeconds(time);
 
         animator.SetInteger("AttackInt", 0);
-        animator.SetBool("Countering", false);
         canCounter = true;
+    }
+
+    IEnumerator MoveTo ()
+    {
+        Vector3 lookVec = aggressor.position - transform.position;
+        Quaternion lookRot = Quaternion.LookRotation(lookVec);
+        transform.rotation = lookRot;
+
+        yield return new WaitForEndOfFrame();
+
+        relPos = new Vector3( 0, 0, 1.25f);
+        Vector3 targPos = aggressor.TransformPoint(relPos);
+        transform.position = targPos;
+
+        rig.velocity = aggressor.GetComponent<Rigidbody>().velocity;
     }
 }

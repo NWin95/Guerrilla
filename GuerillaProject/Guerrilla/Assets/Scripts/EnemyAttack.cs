@@ -34,18 +34,19 @@ public class EnemyAttack : MonoBehaviour {
 
     public IEnumerator Countered ()
     {
-        countered = true;
-        animator.SetBool("Countered", countered);
+        if (!countered)
+        {
+            countered = true;
+            animator.SetTrigger("CounteredTrigger");
 
-        yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(1.5f);
 
-        countered = false;
-        animator.SetBool("Countered", countered);
+            countered = false;
 
-        animator.SetInteger("AttackInt", 0);
-        animator.SetBool("Attacking", false);
-        gameObject.layer = LayerMask.NameToLayer("Enemy");
-        attacking = false;
+            animator.SetInteger("AttackInt", 0);
+            gameObject.layer = LayerMask.NameToLayer("Enemy");
+            attacking = false;
+        }
     }
 
     IEnumerator AttackSel()
@@ -53,20 +54,26 @@ public class EnemyAttack : MonoBehaviour {
         attacking = true;
         gameObject.layer = LayerMask.NameToLayer("EnemyAttacking");
         animator.SetInteger("AttackInt", 1);
-        //animator.SetBool("Countered", true);
         float time = 1;
 
-        yield return new WaitForEndOfFrame();
-        animator.SetBool("Attacking", true);
+        //yield return new WaitForEndOfFrame();
+        LookAt();
+        animator.SetTrigger("AttackTrigger");
 
         yield return new WaitForSeconds(time + 0.25f);
 
         if (!countered)
         {
             animator.SetInteger("AttackInt", 0);
-            animator.SetBool("Attacking", false);
             gameObject.layer = LayerMask.NameToLayer("Enemy");
             attacking = false;
         }
+    }
+
+    void LookAt ()
+    {
+        Vector3 lookVec = player.position - transform.position;
+        Quaternion lookRot = Quaternion.LookRotation(lookVec);
+        transform.rotation = lookRot;
     }
 }
