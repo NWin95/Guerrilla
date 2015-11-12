@@ -41,6 +41,7 @@ public class Player_ModeController : MonoBehaviour {
         birdVis.SetActive(false);
 
         GetComponent<Player_MovementHuman>().enabled = true;
+        GetComponent<Player_MeleeHuman>().enabled = true;
         GetComponent<Grapnel>().enabled = true;
 
         GetComponent<Player_MovementBird>().enabled = false;
@@ -66,6 +67,7 @@ public class Player_ModeController : MonoBehaviour {
 
         GetComponent<Player_MovementBird>().enabled = true;
         GetComponent<Player_MovementHuman>().enabled = false;
+        GetComponent<Player_MeleeHuman>().enabled = false;
 
         Grapnel grapnelScript = GetComponent<Grapnel>();
         grapnelScript.GrapnelDetach();
