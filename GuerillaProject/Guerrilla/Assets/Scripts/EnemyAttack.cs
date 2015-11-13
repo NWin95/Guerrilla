@@ -1,14 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+//Need to change from Coroutines to something that can interrupt itself
+
+
 public class EnemyAttack : MonoBehaviour {
 
     public Animator animator;
     Transform player;
     float dis;
     public float attackRange;
-    bool attacking;
+    public bool canAttack;
     bool countered;
+    public int attackInt;
 
 	void Start () {
         player = GameObject.Find("Player").transform;
@@ -23,7 +27,7 @@ public class EnemyAttack : MonoBehaviour {
 
     void Range ()
     {
-        if (dis <= attackRange && !attacking)
+        if (dis <= attackRange && canAttack)
             StartCoroutine (AttackSel());
     }
 
@@ -45,28 +49,62 @@ public class EnemyAttack : MonoBehaviour {
 
             animator.SetInteger("AttackInt", 0);
             gameObject.layer = LayerMask.NameToLayer("Enemy");
-            attacking = false;
+            canAttack = true;
         }
+    }
+
+    public IEnumerator Hit(int recievedInt)
+    {
+        animator.SetTrigger("HitTrigger");
+        animator.SetInteger("AttackInt", recievedInt);
+
+        //canCounter = false;
+        //movement.canMove = false;
+        yield return new WaitForSeconds(0.35f);
+        //movement.canMove = true;
+
+        animator.SetInteger("AttackInt", 0);
+        //canCounter = true;
     }
 
     IEnumerator AttackSel()
     {
-        attacking = true;
-        gameObject.layer = LayerMask.NameToLayer("EnemyAttacking");
-        animator.SetInteger("AttackInt", 1);
+        attackInt = Random.Range(1, 2 + 1);
+
+        canAttack = false;
+        animator.SetInteger("AttackInt", attackInt);
         float time = 1;
 
+        switch (attackInt)
+        {
+            case 1:
+                time = 0.8f;
+                break;
+            case 2:
+                time = 0.8f;
+                break;
+        }
         //yield return new WaitForEndOfFrame();
         LookAt();
         animator.SetTrigger("AttackTrigger");
 
-        yield return new WaitForSeconds(time + 0.25f);
+        yield return new WaitForSeconds(time * 0.1f);
+        gameObject.layer = LayerMask.NameToLayer("EnemyAttacking");
+
+        yield return new WaitForSeconds(time * 0.55f);
 
         if (!countered)
         {
+            Player_MeleeHuman meleeHuman = player.GetComponent<Player_MeleeHuman>();
+            StartCoroutine(meleeHuman.Hit(attackInt));
+
+            yield return new WaitForSeconds(time * 0.35f);
+
             animator.SetInteger("AttackInt", 0);
             gameObject.layer = LayerMask.NameToLayer("Enemy");
-            attacking = false;
+
+            yield return new WaitForSeconds(0.25f);
+            canAttack = true;
         }
     }
 

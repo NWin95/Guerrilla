@@ -19,6 +19,7 @@ public class Player_MovementHuman : MonoBehaviour {
     public int contacts;
 
     float inputMag;
+    public bool canMove;
 
     Vector3 nonKinVel;
     Vector3 rigVelCus;
@@ -130,17 +131,20 @@ public class Player_MovementHuman : MonoBehaviour {
 
     void MovementFxied ()
     {
-        Vector3 inputVec = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        inputVec = Vector3.ClampMagnitude(inputVec, 1);
-        inputMag = inputVec.magnitude;
-        inputVec = transform.TransformDirection(inputVec);
-
-        if (grounded)
+        if (canMove)
         {
-            inputVel = inputVec * maxSpeed;
+            Vector3 inputVec = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+            inputVec = Vector3.ClampMagnitude(inputVec, 1);
+            inputMag = inputVec.magnitude;
+            inputVec = transform.TransformDirection(inputVec);
 
-            Vector3 pos = transform.position;
-            rig.MovePosition(pos + (inputVel * Time.fixedDeltaTime));
+            if (grounded)
+            {
+                inputVel = inputVec * maxSpeed;
+
+                Vector3 pos = transform.position;
+                rig.MovePosition(pos + (inputVel * Time.fixedDeltaTime));
+            }
         }
     }
 
