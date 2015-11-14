@@ -10,9 +10,12 @@ public class EnemyAttack : MonoBehaviour {
     Transform player;
     float dis;
     public float attackRange;
-    public bool canAttack;
+    //public bool canAttack;
     bool countered;
     public int attackInt;
+
+    public bool attackBool;
+    public bool hitBool;
 
 	void Start () {
         player = GameObject.Find("Player").transform;
@@ -27,8 +30,10 @@ public class EnemyAttack : MonoBehaviour {
 
     void Range ()
     {
-        if (dis <= attackRange && canAttack)
-            StartCoroutine (AttackSel());
+        if (dis <= attackRange /* && canAttack */)
+        {
+            StartCoroutine(AttackSel());
+        }
     }
 
     void Dis ()
@@ -43,68 +48,92 @@ public class EnemyAttack : MonoBehaviour {
             countered = true;
             animator.SetTrigger("CounteredTrigger");
 
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(0.75f);
+            gameObject.layer = LayerMask.NameToLayer("Enemy");
+            yield return new WaitForSeconds(0.75f);
 
             countered = false;
 
             animator.SetInteger("AttackInt", 0);
-            gameObject.layer = LayerMask.NameToLayer("Enemy");
-            canAttack = true;
+
+            yield return new WaitForSeconds(1f);
+
+            //canAttack = true;
+
+            if (attackBool)
+                attackBool = false;
         }
     }
 
     public IEnumerator Hit(int recievedInt)
     {
-        animator.SetTrigger("HitTrigger");
-        animator.SetInteger("AttackInt", recievedInt);
+        if (!hitBool)
+        {
+            hitBool = true;
+            attackBool = true;
 
-        //canCounter = false;
-        //movement.canMove = false;
-        yield return new WaitForSeconds(0.35f);
-        //movement.canMove = true;
+            animator.SetTrigger("HitTrigger");
+            animator.SetInteger("AttackInt", recievedInt);
 
-        animator.SetInteger("AttackInt", 0);
-        //canCounter = true;
+            //canCounter = false;
+            //movement.canMove = false;
+            yield return new WaitForSeconds(0.35f);
+            //movement.canMove = true;
+
+            animator.SetInteger("AttackInt", 0);
+            //canCounter = true;
+
+            yield return new WaitForSeconds(0.75f);
+
+            attackBool = false;
+            hitBool = false;
+        }
     }
 
     IEnumerator AttackSel()
     {
-        attackInt = Random.Range(1, 2 + 1);
-
-        canAttack = false;
-        animator.SetInteger("AttackInt", attackInt);
-        float time = 1;
-
-        switch (attackInt)
+        if (!attackBool && !hitBool)
         {
-            case 1:
-                time = 0.8f;
-                break;
-            case 2:
-                time = 0.8f;
-                break;
-        }
-        //yield return new WaitForEndOfFrame();
-        LookAt();
-        animator.SetTrigger("AttackTrigger");
+            attackBool = true;
 
-        yield return new WaitForSeconds(time * 0.1f);
-        gameObject.layer = LayerMask.NameToLayer("EnemyAttacking");
+            attackInt = Random.Range(1, 2 + 1);
 
-        yield return new WaitForSeconds(time * 0.55f);
+            //canAttack = false;
+            animator.SetInteger("AttackInt", attackInt);
+            float time = 1;
 
-        if (!countered)
-        {
-            Player_MeleeHuman meleeHuman = player.GetComponent<Player_MeleeHuman>();
-            StartCoroutine(meleeHuman.Hit(attackInt));
+            switch (attackInt)
+            {
+                case 1:
+                    time = 0.8f;
+                    break;
+                case 2:
+                    time = 0.8f;
+                    break;
+            }
+            //yield return new WaitForEndOfFrame();
+            LookAt();
+            animator.SetTrigger("AttackTrigger");
 
-            yield return new WaitForSeconds(time * 0.35f);
+            yield return new WaitForSeconds(time * 0.1f);
+            gameObject.layer = LayerMask.NameToLayer("EnemyAttacking");
 
-            animator.SetInteger("AttackInt", 0);
-            gameObject.layer = LayerMask.NameToLayer("Enemy");
+            yield return new WaitForSeconds(time * 0.55f);
 
-            yield return new WaitForSeconds(0.25f);
-            canAttack = true;
+            if (!countered)
+            {
+                Player_MeleeHuman meleeHuman = player.GetComponent<Player_MeleeHuman>();
+                StartCoroutine(meleeHuman.Hit(attackInt));
+
+                yield return new WaitForSeconds(time * 0.35f);
+
+                animator.SetInteger("AttackInt", 0);
+                gameObject.layer = LayerMask.NameToLayer("Enemy");
+
+                yield return new WaitForSeconds(0.25f);
+                //canAttack = true;
+                attackBool = false;
+            }
         }
     }
 

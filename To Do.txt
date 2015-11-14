@@ -1,0 +1,27 @@
+Constantly:
+  Music:
+	learn about music
+  Sound:
+	learn about sfx
+
+Soon:
+  Fix issues with the coroutines in the melee scripts:
+	Base it on countdowns?
+	Base it better on booleans?
+  
+  Environment assets:
+	Floating islands
+	Trees
+	Rocks
+	Water
+
+  Enemy Ships:
+	Carrier
+	Assault
+	Cargo
+
+Further:
+  Enemy AI / Goals:
+	Resources
+	Resource Harvesting
+	Player Targeting

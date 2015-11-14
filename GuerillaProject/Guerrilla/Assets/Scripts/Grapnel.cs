@@ -22,6 +22,10 @@ public class Grapnel : MonoBehaviour {
     public float grapnelRetractSpeed;
     //bool grapnelRig;
     float rangeHold;
+    LineRenderer line;
+    public Material lineMat;
+    public Color lineColor;
+    public Transform rHand;
 
     //Vector3 rigVelCus;
     //Vector3 posA;
@@ -53,6 +57,7 @@ public class Grapnel : MonoBehaviour {
         //if (swinging)
         //    LookAtVel();
 
+        LineUpdate();
         LookAtFunc();
         AnimationFunc();
     }
@@ -70,6 +75,26 @@ public class Grapnel : MonoBehaviour {
         //RigVelCusFunc();
         //LookAtVel();
     }   
+
+    void LineUpdate ()
+    {
+        Vector3 pos = rHand.position;
+        if (thrownBool)
+        {
+            line.SetPosition(0, pos);
+            line.SetPosition(1, grapnelTrans.position);
+        }
+
+        if (swinging)
+        {
+            line.SetPosition(0, pos);
+
+            if (sj.connectedBody != null)
+                line.SetPosition(1, sj.connectedBody.transform.TransformPoint(sj.connectedAnchor));
+            else
+                line.SetPosition(1, sj.connectedAnchor);
+        }
+    }
 
     void GrapnelRetract ()
     {
@@ -139,6 +164,8 @@ public class Grapnel : MonoBehaviour {
         thrownBool = false;
         if (grapnelTrans != null)
             Destroy(grapnelTrans.gameObject);
+        if (GetComponent<LineRenderer>() && !swinging)
+            Destroy(line);
     }
 
     void GrapnelThrow ()    //  Thow grapnel
@@ -155,6 +182,14 @@ public class Grapnel : MonoBehaviour {
         SpringJoint sj = grapnelObj.GetComponent<SpringJoint>();
         sj.connectedBody = rig;
         sj.maxDistance = grapnelRange;
+
+        line = gameObject.AddComponent<LineRenderer>();
+        line.material = lineMat;
+        line.SetColors(lineColor, lineColor);
+        line.SetWidth(0.05f, 0.05f);
+
+        line.SetPosition(0, rHand.position);
+        line.SetPosition(1, grapnelTrans.position);
     }
 
     void GrapnelCast () //  Test space in rope line
@@ -175,7 +210,9 @@ public class Grapnel : MonoBehaviour {
     {
         swinging = false;
         if (GetComponent<SpringJoint>())
-            Destroy(gameObject.GetComponent<SpringJoint>());
+            Destroy(sj);
+        if (GetComponent<LineRenderer>())
+            Destroy(line);
     }
 
     void GrapnelAttach(RaycastHit hit)  //  Creates spring joint

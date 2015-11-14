@@ -19,6 +19,10 @@ public class Player_MeleeHuman : MonoBehaviour {
     int attackInt;
     Player_MovementHuman movement;
 
+    public bool hitBool;
+    public bool strikeBool;
+    public bool counterBool;
+
 	void Start () {
         rig = GetComponent<Rigidbody>();
         movement = GetComponent<Player_MovementHuman>();
@@ -49,7 +53,9 @@ public class Player_MeleeHuman : MonoBehaviour {
         inputDir.y = 0;
         inputDir = inputDir.normalized;
 
-        target = null;
+        if (!strikeBool)
+            target = null;
+
         foreach (Collider col in colliders)
         {
             Transform testTrans = col.transform;
@@ -99,89 +105,107 @@ public class Player_MeleeHuman : MonoBehaviour {
 
     public IEnumerator Hit (int recievedInt)
     {
-        animator.SetTrigger("HitTrigger");
-        animator.SetInteger("AttackInt", recievedInt);
+        if (!hitBool)
+        {
+            hitBool = true;
 
-        canCounter = false;
+            animator.SetTrigger("HitTrigger");
+            animator.SetInteger("AttackInt", recievedInt);
 
-        movement.canMove = false;
-        yield return new WaitForSeconds(0.35f);
-        movement.canMove = true;
+            canCounter = false;
 
-        animator.SetInteger("AttackInt", 0);
-        canCounter = true;
+            movement.canMove = false;
+            yield return new WaitForSeconds(0.35f);
+            movement.canMove = true;
+
+            animator.SetInteger("AttackInt", 0);
+            canCounter = true;
+
+            hitBool = false;
+        }
     }
 
     IEnumerator Strike()
     {
-        canAttack = false;
-        attackInt = Random.Range(1, 2 + 1);
-
-        float time = 0;
-
-        switch (attackInt)
+        if (!strikeBool && !hitBool)
         {
-            case 1:
-                time = 0.8f;
-                break;
-            case 2:
-                time = 0.8f;
-                break;
+            strikeBool = true;
+
+            canAttack = false;
+            attackInt = Random.Range(1, 2 + 1);
+
+            float time = 0;
+
+            switch (attackInt)
+            {
+                case 1:
+                    time = 0.8f;
+                    break;
+                case 2:
+                    time = 0.8f;
+                    break;
+            }
+
+            EnemyAttack enemyAttack = target.GetComponent<EnemyAttack>();
+            enemyAttack.attackBool = true;
+            //enemyAttack.canAttack = false;
+
+            animator.SetInteger("AttackInt", attackInt);
+            animator.SetTrigger("AttackTrigger");
+            StartCoroutine(MoveToStrike());
+
+            yield return new WaitForSeconds(time * 0.65f);
+            StartCoroutine(enemyAttack.Hit(attackInt));
+
+            yield return new WaitForSeconds(time * 0.35f);
+
+            animator.SetInteger("AttackInt", 0);
+
+            canAttack = true;
+            strikeBool = false;
         }
-
-        EnemyAttack enemyAttack = target.GetComponent<EnemyAttack>();
-        enemyAttack.canAttack = false;
-
-        animator.SetInteger("AttackInt", attackInt);
-        animator.SetTrigger("AttackTrigger");
-        StartCoroutine(MoveToStrike());
-
-        yield return new WaitForSeconds(time * 0.65f);
-        StartCoroutine(enemyAttack.Hit(attackInt));
-
-        yield return new WaitForSeconds(time * 0.35f);
-
-        animator.SetInteger("AttackInt", 0);
-
-        canAttack = true;
-
-        yield return new WaitForSeconds(2.5f);
-        enemyAttack.canAttack = true;
     }
 
     IEnumerator Counter ()
     {
-        EnemyAttack enemyAttack = aggressor.GetComponent<EnemyAttack>();
-        canCounter = false;
-        attackInt = enemyAttack.attackInt;
-
-        float time = 0;
-
-        switch (attackInt)
+        if (!counterBool)
         {
-            case 1:
-                relPos = new Vector3 (0, 0, 1.25f);
-                time = 0.74f;
-                break;
-            case 2:
-                relPos = new Vector3(0, 0, 1f);
-                time = 1.32f;
-                break;
+            counterBool = true;
+
+            EnemyAttack enemyAttack = aggressor.GetComponent<EnemyAttack>();
+            canCounter = false;
+            attackInt = enemyAttack.attackInt;
+
+            float time = 0;
+
+            switch (attackInt)
+            {
+                case 1:
+                    relPos = new Vector3(0, 0, 1.25f);
+                    time = 0.74f;
+                    break;
+                case 2:
+                    relPos = new Vector3(0, 0, 1f);
+                    time = 1.32f;
+                    break;
+            }
+
+            StartCoroutine(MoveToCounter());
+
+            animator.SetInteger("AttackInt", attackInt);
+            animator.SetTrigger("CounterTrigger");
+
+            StartCoroutine(enemyAttack.Countered());
+
+            movement.canMove = false;
+            yield return new WaitForSeconds(time * 1.025f);
+            movement.canMove = true;
+
+            animator.SetInteger("AttackInt", 0);
+            canCounter = true;
+
+            counterBool = false;
         }
-
-        StartCoroutine(MoveToCounter());
-
-        animator.SetInteger("AttackInt", attackInt);
-        animator.SetTrigger("CounterTrigger");
-
-        StartCoroutine (enemyAttack.Countered());
-
-        movement.canMove = false;
-        yield return new WaitForSeconds(time * 1.025f);
-        movement.canMove = true;
-
-        animator.SetInteger("AttackInt", 0);
-        canCounter = true;
     }
 
     IEnumerator MoveToCounter ()
