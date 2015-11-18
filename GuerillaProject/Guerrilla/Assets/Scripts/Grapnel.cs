@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+//  make shift more of an instant pull move, like spiderman or just cause
+
 public class Grapnel : MonoBehaviour {
 
     public Animator animator;

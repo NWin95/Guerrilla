@@ -71,6 +71,8 @@
     <Compile Include="Assets\Scripts\AAGunScript.cs" />
     <Compile Include="Assets\Scripts\AAShot.cs" />
     <Compile Include="Assets\Scripts\CameraRotation.cs" />
+    <Compile Include="Assets\Scripts\CloudScript.cs" />
+    <Compile Include="Assets\Scripts\CloudSpawner.cs" />
     <Compile Include="Assets\Scripts\DebugStuff.cs" />
     <Compile Include="Assets\Scripts\EnemyAttack.cs" />
     <Compile Include="Assets\Scripts\Grapnel.cs" />
@@ -78,6 +80,7 @@
     <Compile Include="Assets\Scripts\Player_ModeController.cs" />
     <Compile Include="Assets\Scripts\Player_MovementBird.cs" />
     <Compile Include="Assets\Scripts\Player_MovementHuman.cs" />
+    <Compile Include="Assets\Scripts\ShipScript.cs" />
     <Compile Include="Assets\Scripts\SpeedTest.cs" />
     <Compile Include="Assets\Scripts\Translate.cs" />
   </ItemGroup>
