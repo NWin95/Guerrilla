@@ -10,7 +10,10 @@ public class CloudScript : MonoBehaviour {
 	
 	void Start () {
         ps = GetComponent<ParticleSystem>();
+        ps.Stop();
+
         RandSize();
+        ps.Play();
         //StartCoroutine(SetTime());
 	}
 
