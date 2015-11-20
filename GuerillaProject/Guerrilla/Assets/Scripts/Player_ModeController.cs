@@ -49,7 +49,7 @@ public class Player_ModeController : MonoBehaviour {
         rig.useGravity = true;
         rig.mass = 75;
 
-        camScript.camPosTarg = new Vector3(0, 2, -4);
+        camScript.camPosTarg = new Vector3(0, 2, -4.5f);
         camScript.camRotTarg = new Vector3(7.5f, 0, 0);
     }
 

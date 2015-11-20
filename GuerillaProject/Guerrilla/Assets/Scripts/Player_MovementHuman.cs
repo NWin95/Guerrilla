@@ -26,6 +26,8 @@ public class Player_MovementHuman : MonoBehaviour {
     Vector3 posA;
     Vector3 posB;
 
+    public LayerMask groundMask;
+
 	void Start () {
         rig = GetComponent<Rigidbody>();
         posB = rig.position;
@@ -85,7 +87,7 @@ public class Player_MovementHuman : MonoBehaviour {
     void GroundingFunc ()
     {
         Vector3 pos = groundPoint.position + (Vector3.up * 0.5f);
-        if (Physics.Raycast(pos, -Vector3.up, 0.75f))
+        if (Physics.Raycast(pos, -Vector3.up, 0.75f, groundMask))
             gRayCheck = true;
         else
             gRayCheck = false;
